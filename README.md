@@ -17,9 +17,9 @@ Para comenzar a usar The boilerplate, sigue estos sencillos pasos:
    ```bash
    git clone https://github.com/developerstrategy/boilerplate.git
 Instala las dependencias:
-bash
-Copy code
-npm install
+
+2.  ```bash
+   npm install
 Inicia el servidor de desarrollo:
 bash
 Copy code
