@@ -1,24 +1,42 @@
-# Blog personal JAMStack: Archivos iniciales
+# The boilerplate
 
-Estos son los archivos de inicio utilizados por [Manuel Ruiz](https://digitalstrategy.es) para crear un blog personal utilizando JAMStack para el desafío [DevProjects](https://www.codementor.io/projects/web/create-a-fast-and-secure-blog-using-jamstack-c93coupnxb) de [Codementor](https://www.codementor.io/). Eres libre de utilizarlos como desees para comenzar con el desafío, si deseas comenzar a trabajar en la creación del sitio sin preocuparte por el contenido en sí mismo.
+Bienvenido a The boilerplate, la base ideal para crear sitios web dinámicos y eficientes. Este proyecto, desarrollado con la colaboración de Manuel, Dani y José, integra las poderosas funcionalidades de Nunjucks y Eleventy para ofrecer una experiencia de desarrollo web ágil y flexible.
 
-Los archivos proporcionados son páginas terminadas utilizando HTML y CSS regular. Los archivos HTML se pueden descomponer y utilizar para construir las diferentes plantillas y archivos parciales utilizando el lenguaje de plantillas de tu elección.
+## Características
 
-La estilización de las páginas ya está completa. Dicho esto, la carpeta `design-files` contiene un archivo Figma y un archivo .webp de un diseño si deseas intentar construirlo desde cero. No es necesario utilizar este diseño en absoluto, depende de cómo desees abordar el desafío.
+- **Integración de Nunjucks**: Plantillas poderosas y fáciles de usar para una personalización sin esfuerzo.
+- **Basado en Eleventy**: Rápido, sencillo y extensible, Eleventy te ayuda a construir proyectos de manera eficiente.
+- **Estructura Modular**: Diseñado para ser adaptable y escalable según las necesidades de tu proyecto.
+- **Documentación Completa**: Guías y ejemplos para facilitar tu proceso de desarrollo.
 
-La carpeta `src` contiene archivos para que puedas poner en marcha tu proyecto sin preocuparte por el contenido de las publicaciones/artículos. Esa carpeta contiene:
+## Empezando
 
-- Archivos HTML que puedes utilizar como base para los diferentes diseños de página. Estos pueden convertirse en las plantillas que se utilizarán.
-- Archivo CSS para la estilización de las páginas.
-- 5 artículos de blog en la carpeta `blog`.
-- Imágenes y un logotipo en la carpeta `assets`.
+Para comenzar a usar The boilerplate, sigue estos sencillos pasos:
 
-Los artículos están escritos en Markdown y contienen Front Matter. Dependiendo del Generador de Sitios Estáticos que utilices, es posible que debas modificarlos un poco si deseas utilizarlos.
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/developerstrategy/boilerplate.git
+Instala las dependencias:
+bash
+Copy code
+npm install
+Inicia el servidor de desarrollo:
+bash
+Copy code
+npm start
+Contribuir
+Nos encantaría que contribuyas a The boilerplate. Antes de enviar tu contribución, por favor lee nuestras directrices de contribución.
 
-## Desafío DevProjects
+Autores
+Manuel - Ux old school
+Dani - Criptovrox
+José - Paintballpro
+Licencia
+Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE.md para detalles.
 
-Como se mencionó, estos archivos están aquí para ayudarte a comenzar con el desafío DevProjects. Por favor, visita la [página del desafío](#) para obtener más información sobre el mismo.
+Agradecimientos
+Agradecemos a todos quienes han contribuido con su tiempo, código y feedback.
+Inspiración, créditos, etc.
 
-## Tutorial
 
-Puedes [ver este video](https://youtu.be/4wD00RT6d-g) para ver cómo Manuel utiliza Eleventy, Netlify y Netlify CMS para crear un sitio de blog completo construido completamente con archivos estáticos.
+Hecho con ❤ por Manuel, Dani y José.
