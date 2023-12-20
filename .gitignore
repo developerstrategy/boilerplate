@@ -4,3 +4,6 @@ build/
 dist/
 .cache/
 public/
+.env
+# Local Netlify folder
+.netlify
