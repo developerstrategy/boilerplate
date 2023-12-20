@@ -2,11 +2,9 @@
 layout: _index.njk
 permalink: /
 
-
-title:  The Boilerplate
-subtitle:  Una web completa actualizada a las nuevas tendencias en SEO y diseño. 
+title: The Boilerplate
+subtitle: Una web completa actualizada a las nuevas tendencias en SEO y diseño.
 image: 7.jpgx
-
 
 eleventyComputed:
   metaTitle: Design Systems en español | Una recopilación de material para aprender Design systems
