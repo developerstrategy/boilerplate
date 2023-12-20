@@ -46,7 +46,7 @@ Un Design System proporciona una base sólida para el crecimiento y la evolució
 
 La consistencia y la estructura bien definida de un Design
 
- System también tienen un impacto positivo en el posicionamiento de tu sitio web en los motores de búsqueda. Al utilizar un sistema bien estructurado, con una jerarquía clara y contenido optimizado, mejoras la visibilidad y la indexabilidad de tu sitio, lo que se traduce en un mejor rendimiento en los resultados de búsqueda.
+System también tienen un impacto positivo en el posicionamiento de tu sitio web en los motores de búsqueda. Al utilizar un sistema bien estructurado, con una jerarquía clara y contenido optimizado, mejoras la visibilidad y la indexabilidad de tu sitio, lo que se traduce en un mejor rendimiento en los resultados de búsqueda.
 
 ## Preparándonos para el futuro
 
@@ -58,6 +58,6 @@ Aprovechar los beneficios de un Design System no solo mejora la experiencia de u
 
 ¡El futuro del diseño web te espera! 🚀💡
 
-*Descubre más sobre las mejores prácticas y las últimas tendencias en diseño y desarrollo web en nuestro blog. Suscríbete y mantente actualizado con las últimas novedades del mundo del diseño.*
+_Descubre más sobre las mejores prácticas y las últimas tendencias en diseño y desarrollo web en nuestro blog. Suscríbete y mantente actualizado con las últimas novedades del mundo del diseño._
 
 ¡Potencia tu diseño web ahora mismo! ¡No esperes más! 🌟🎨
