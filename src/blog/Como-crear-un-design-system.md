@@ -26,7 +26,6 @@ Un Design System es una colección de elementos reutilizables, pautas y principi
 
 Si estás aquí, es probable que quieras saber cómo realizar un Design System. En esta guía, te proporcionaremos los conocimientos necesarios para crear tu propio Design System y aprovechar al máximo sus beneficios.
 
-
 ## Palabra clave principal: Design Systems
 
 Para optimizar este artículo para los motores de búsqueda, la palabra clave principal que utilizaremos es "Design Systems". Aseguraremos su presencia adecuada a lo largo del contenido para mejorar su visibilidad en los resultados de búsqueda relacionados.
@@ -52,8 +51,7 @@ A continuación, presentamos una estructura básica para este artículo:
    - Otros ejemplos de herramientas útiles
 6. Mejores prácticas para mantener
 
- y evolucionar un Design System
-7. Conclusiones
+y evolucionar un Design System 7. Conclusiones
 
 Con esta estructura, cubriremos todos los aspectos clave para ayudarte a crear tu propio Design System de manera efectiva.
 
@@ -64,4 +62,7 @@ Recuerda maximizar la retención del usuario utilizando un lenguaje directo y se
 ¡No te pierdas nuestra próxima publicación sobre cómo documentar y mantener tu Design System! Sigue atento a nuestro blog para más consejos y recursos útiles.
 
 ¡Comienza a crear experiencias de usuario excepcionales con tu propio Design System!
+
+```
+
 ```

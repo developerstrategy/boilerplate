@@ -35,14 +35,17 @@ El curso de Design Systems para Figma te proporcionará las habilidades y conoci
 - Obtendrás consejos y trucos para crear interfaces consistentes y atractivas.
 
 ## Introducción a los design systems
+
 <iframe  src="https://www.youtube.com/embed/Dtd40cHQQlk" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Lección 1
+
 <iframe  src="https://www.youtube.com/embed/YLo6g58vUm0" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Lección 2 
+### Lección 2
 
 #### Lección 2 Parte 1
+
 <iframe  src="https://www.youtube.com/embed/pwzYVIgga2c" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Lección 2 Parte 2
@@ -50,14 +53,17 @@ El curso de Design Systems para Figma te proporcionará las habilidades y conoci
 <iframe  src="https://www.youtube.com/embed/o9CloFonY0E" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Lección 2 Parte 3
+
 <iframe  src="https://www.youtube.com/embed/sHF6JSPWbzM" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Lección 2 Parte 4
+
 <iframe  src="https://www.youtube.com/embed/NGGMGybuOwg" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Lección 3
+
 <iframe  src="https://www.youtube.com/embed/0XSLMGh8yhM" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Lección 4
-<iframe  src="https://www.youtube.com/embed/_sTWtnNU1L0" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<iframe  src="https://www.youtube.com/embed/_sTWtnNU1L0" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

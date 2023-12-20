@@ -22,8 +22,6 @@ eleventyComputed:
 
 La tipografía es mucho más que un conjunto de letras y caracteres. Es una forma de comunicación visual que transmite emociones, crea jerarquías de contenido y refuerza la identidad de marca. En un Design System, la tipografía desempeña un papel fundamental para lograr la coherencia y la consistencia en el diseño de una interfaz de usuario (UI).
 
-
-
 ## La coherencia visual y la experiencia de usuario
 
 La incorporación de la tipografía en un Design System asegura una apariencia visual consistente en todo el sitio web. Al definir y estandarizar los estilos tipográficos, como la fuente, el tamaño, el espaciado y el peso, se crea una coherencia visual que guía al usuario a través de la interfaz de manera fluida y agradable.
@@ -40,7 +38,7 @@ Una jerarquía visual clara y bien definida guía al usuario a través del conte
 
 La tipografía no solo se limita a la pantalla de un dispositivo. Un Design System que incorpora la tipografía de manera coherente también se
 
- extiende a otros puntos de contacto, como impresiones, materiales de marketing y aplicaciones móviles. Esta consistencia en todos los canales de comunicación refuerza la identidad de la marca y crea una experiencia unificada para el usuario.
+extiende a otros puntos de contacto, como impresiones, materiales de marketing y aplicaciones móviles. Esta consistencia en todos los canales de comunicación refuerza la identidad de la marca y crea una experiencia unificada para el usuario.
 
 ## El poder de la escalabilidad
 
@@ -54,6 +52,6 @@ La tipografía es un elemento esencial en un Design System. Su incorporación ga
 
 ¡Potencia tu diseño web con una tipografía coherente y efectiva! ¡No esperes más y comienza a utilizar un Design System hoy mismo!
 
-*Descubre más sobre las mejores prácticas y las últimas tendencias en diseño y desarrollo web en nuestro blog. Suscríbete y mantente actualizado con las últimas novedades del mundo del diseño.*
+_Descubre más sobre las mejores prácticas y las últimas tendencias en diseño y desarrollo web en nuestro blog. Suscríbete y mantente actualizado con las últimas novedades del mundo del diseño._
 
 ¡Optimiza tu diseño web ahora mismo! ¡No esperes más! 🌟🎨

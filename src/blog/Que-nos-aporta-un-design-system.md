@@ -56,6 +56,6 @@ Si quieres saber más sobre el mundo del diseño y desarrollo web, no dudes en e
 
 ¡Empieza a construir tu Design System y lleva tu web al éxito! 🚀💡
 
-*¡No te pierdas nuestro próximo artículo sobre cómo optimizar tu Design System para una experiencia de usuario excepcional!*
+_¡No te pierdas nuestro próximo artículo sobre cómo optimizar tu Design System para una experiencia de usuario excepcional!_
 
 ¡Suscríbete a nuestro newsletter y no te lo pierdas! 💌
