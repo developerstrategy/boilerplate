@@ -49,7 +49,9 @@ $width-left: calc((1280px + (100vw - 1600px) / 2));
 @import "./_blog.scss";
 @import "./_curso.scss";
 @import "./_brands.scss";
-@import "./_bubble-whatsapp.scss";
+@import "./componentes/_bubble-whatsapp.scss";
+
+@import "./componentes/_blog-home.scss";
 
 
 
@@ -186,6 +188,9 @@ img{
   font-weight: normal;
 }
 
+.form-input-label-2  input{
+background-color: transparent;
+}
 
 b {
   @include font-bold;
@@ -597,11 +602,7 @@ ul.list-clear li {
 .bg-clear {
   background-color: #f3f2f0;;
 }
-article {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-}
+
 
 .main-article  {
   a:hover{

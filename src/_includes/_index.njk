@@ -1,47 +1,106 @@
 ---
 layout: base.njk
 ---
-
 {% set noheroimage = [] %}
-
 {% import "macros/_insert.njk" as insert %}
-
-
 <article class="main-article  ">
   {% include 'components/herohome.njk' %}</div>
-
-
-<section class="inview ptr-120 pbr-120" >
-  <div class="container-global mx-auto  pbr-120">
-    <div class="fluid-8-r c-secondary">Nuestra vision</div>
-  </div>
-  
-      <div class="container-5 ">
-        <span class="c-primary fluid-5-r ">Quieres convertirte en experto en design systems? </span>
-        <span class="fluid-5-r pt-64 pb-64 c-secondary">
-     
-        
-          {% call insert.splitenpalabras('Accede al centro líder en design systems, ofreciendo cursos, repositorios y herramientas de primera calidad para tu desarrollo en este campo.   ') %} {% endcall %}
-        
-        </span>
-
-
+  <section class="inview ptr-120 pbr-120">
+    <div class="container-global mx-auto  pbr-120">
+      <div class="fluid-8-r c-secondary">Nuestra vision</div>
     </div>
-  
-</section>
-
-  <div class="section bg-color  ">
-
-  <div    class="bg-color front-section ">
-
-    <div class="container-global mx-auto pt-64 pb-64">
-      <div class="fluid-8-r c-secondary">Design system collection</div>
-      <div class="fluid-7-r c-primary">TOP 100</div>
+    <div class="container-5 ">
+      <span class="c-primary fluid-5-r ">Quieres convertirte en experto en design systems? </span>
+      <span class="fluid-5-r pt-64 pb-64 c-secondary">
+        {% call insert.splitenpalabras('Accede al centro líder en design systems, ofreciendo cursos, repositorios y
+        herramientas de primera calidad para tu desarrollo en este campo. ') %} {% endcall %}
+      </span>
     </div>
+  </section>
 
 
-  </div>
 
-  </div>
+  <section class="front-section bg-light height-full-2 front-section ptr-120 pbr-120">
+    <div class="container mb-64">
+      <div class="row">
+        <div class="col-xs-12 col-md-6  mdmax:mb-42 ">
+        <div class="rat-1-1">
+                 <div class="rat-content  align-center">
+            <a href="/sobre-toldos-marfil/">
+              <img data-aos="fade-up" width="100%" height="100%" src="{{global.imageDir}}/galeria/3.jpg"
+                alt="Clínica Estética y Dental">
+            </a>
+           </div>     </div>
+        </div>
+        <div class="col-xs-12 col-md-6 ">
+          <div data-aos="fade-up" data-aos-delay="200" class="is-flex flex-column">
+            <h2 class="fluid-6-b pb-24">Confía en los profesionales de la <b>web</b>
+            </h2>
+            <div class="mb-24">
+              <p class="text-16-r" data-aos="fade-up" data-aos-once="true" data-aos-delay="300" >
+                Somos una empresa con más de 35 años de experiencia en el sector de los toldos, sistemas de protección solar y
+                automatización.
+                Nos dedicamos a la fabricación, asesoramiento, venta e instalación de todo tipo de toldos. Somos expertos en confección
+                a medida con materiales de primera calidad.
+                En Boilerplate contamos con un equipo propio de profesionales con amplia experiencia en el sector, ofreciendo así un
+                servicio personalizado a nuestros clientes de instalación y mantenimiento de nuestros productos. <b>LLámanos al 93 111111111</b>
+                </p>
+            </div>
+            <div><a data-aos="fade-up" data-aos-once="true" data-aos-delay="500" class="link-line" href="/sobre-toldos-marfil/">SOBRE NOSOTROS </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% include 'components/swiper-gallery.njk' %} 
+
+
+
+  <section id="featured-articles" class="featured-articles front-section bg-dark has-light pt-64 ">
+    <div class="container-3 mb-64">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="fluid-4-b text-center ">Porque elegir    nuestro servicios </h3>
+
+          <h4 class="fluid-6-r text-center ">Elegirnos es lo mejor </h4>
+        </div>
+      </div>
+    </div> 
+    <div class="container-3">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul role="list" class="list-clear flow">
+            {% for servicios in collections.servicios %}
+              {% if  loop.index < 4 %}  
+                      {% include 'servicios-loop.njk' %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% include "components/brands.njk" %}
+
+
+
+  <section class="front-section bg-white pt-64 pb-64">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="fluid-4-b mb-24">Boilerplate <br> te informa</h3>
+          <div class="blog-intro">
+            <ul role="list" class="list-clear blog-intro-inner">
+              {% for blog in collections.blog | reverse %}
+                {% include 'blog-loop.njk' %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   {% include "components/banner.njk" %}
 </article>
