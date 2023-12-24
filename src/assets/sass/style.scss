@@ -372,15 +372,13 @@ img{
   }
 }
 .blog-section {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: -10px;
-  li {
-    flex-basis: 100%;
-    padding: 16px;
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+
+
+
+
 }
 
 .home-section {

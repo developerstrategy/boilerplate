@@ -3,66 +3,55 @@ layout: base.njk
 ---
 {% set noheroimage = [] %}
 {% import "macros/_insert.njk" as insert %}
-<article class="main-article  ">
-  {% include 'components/herohome.njk' %}</div>
+<article class="main-article">
+  {% include 'components/herohome.njk' %}
   <section class="inview ptr-120 pbr-120">
-    <div class="container-global mx-auto  pbr-120">
-      <div class="fluid-8-r c-secondary">Nuestra vision</div>
+    <div class="container-global mx-auto pbr-120">
+      <div class="fluid-8-r c-secondary">Nuestra Misión en Boilerplate</div>
     </div>
     <div class="container-5 ">
-      <span class="c-primary fluid-5-r ">Quieres convertirte en experto en design systems? </span>
+      <span class="c-primary fluid-5-r ">¿Buscas destacar con landing pages únicas?</span>
       <span class="fluid-5-r pt-64 pb-64 c-secondary">
-        {% call insert.splitenpalabras('Accede al centro líder en design systems, ofreciendo cursos, repositorios y
-        herramientas de primera calidad para tu desarrollo en este campo. ') %} {% endcall %}
+        {% call insert.splitenpalabras('En Boilerplate, creamos landing pages innovadoras y personalizadas para que tu negocio resalte en la web. Nuestro equipo especializado utiliza las últimas tendencias y tecnologías para garantizar resultados efectivos.') %} {% endcall %}
       </span>
     </div>
   </section>
 
-
-
   <section class="front-section bg-light height-full-2 front-section ptr-120 pbr-120">
-    <div class="container mb-64">
+    <div class="container-5 mb-64">
       <div class="row">
         <div class="col-xs-12 col-md-6  mdmax:mb-42 ">
-        <div class="rat-1-1">
-                 <div class="rat-content  align-center">
-            <a href="/sobre-toldos-marfil/">
-              <img data-aos="fade-up" width="100%" height="100%" src="{{global.imageDir}}/galeria/3.jpg"
-                alt="Clínica Estética y Dental">
-            </a>
-           </div>     </div>
+          <div class="rat-1-1">
+            <div class="rat-content  align-center">
+              <a href="/about/">
+                <img data-aos="fade-up" width="100%" height="100%" src="{{global.imageDir}}/galeria/3.jpg"
+                  alt="Clínica Estética y Dental">
+              </a>
+            </div>
+          </div>
         </div>
         <div class="col-xs-12 col-md-6 ">
           <div data-aos="fade-up" data-aos-delay="200" class="is-flex flex-column">
-            <h2 class="fluid-6-b pb-24">Confía en los profesionales de la <b>web</b>
+            <h2 class="fluid-6-b pb-24">Confía en los expertos de <b>Boilerplate</b>
             </h2>
             <div class="mb-24">
-              <p class="text-16-r" data-aos="fade-up" data-aos-once="true" data-aos-delay="300" >
-                Somos una empresa con más de 35 años de experiencia en el sector de los toldos, sistemas de protección solar y
-                automatización.
-                Nos dedicamos a la fabricación, asesoramiento, venta e instalación de todo tipo de toldos. Somos expertos en confección
-                a medida con materiales de primera calidad.
-                En Boilerplate contamos con un equipo propio de profesionales con amplia experiencia en el sector, ofreciendo así un
-                servicio personalizado a nuestros clientes de instalación y mantenimiento de nuestros productos. <b>LLámanos al 93 111111111</b>
-                </p>
+              <p class="text-16-r" data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
+                En Boilerplate, nos especializamos en el diseño y desarrollo de landing pages atractivas y efectivas. Con un enfoque en la innovación y la creatividad, nuestro equipo trabaja para garantizar que tu página no solo luzca bien, sino que también convierta visitantes en clientes. <b>Contacta con nosotros para saber más.</b>
+              </p>
             </div>
-            <div><a data-aos="fade-up" data-aos-once="true" data-aos-delay="500" class="link-line" href="/sobre-toldos-marfil/">SOBRE NOSOTROS </a></div>
+            <div><a data-aos="fade-up" data-aos-once="true" data-aos-delay="500" class="link-line" href="/sobre-boilerplate/">SOBRE NOSOTROS </a></div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  {% include 'components/swiper-gallery.njk' %} 
-
-
 
   <section id="featured-articles" class="featured-articles front-section bg-dark has-light pt-64 ">
     <div class="container-3 mb-64">
       <div class="row">
         <div class="col-xs-12">
-          <h3 class="fluid-4-b text-center ">Porque elegir    nuestro servicios </h3>
-
-          <h4 class="fluid-6-r text-center ">Elegirnos es lo mejor </h4>
+          <h3 class="fluid-4-b text-center ">Por qué elegir nuestros servicios en Boilerplate</h3>
+          <h4 class="fluid-6-r text-center ">La excelencia en landing pages</h4>
         </div>
       </div>
     </div> 
@@ -80,9 +69,6 @@ layout: base.njk
       </div>
     </div>
   </section>
-  {% include "components/brands.njk" %}
-
-
 
   <section class="front-section bg-white pt-64 pb-64">
     <div class="container">
@@ -100,7 +86,6 @@ layout: base.njk
       </div>
     </div>
   </section>
-
 
   {% include "components/banner.njk" %}
 </article>
