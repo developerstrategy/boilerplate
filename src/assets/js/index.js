@@ -387,3 +387,48 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM(".my-gallery");
+
+
+
+$(document).ready(function () {
+  $("body").toggleClass("face-open");
+  initvideo();
+
+    $(".accordion-header").click(function(){
+    if($(this).parent().parent().hasClass("active")){
+      $(this).parent().parent().removeClass("active");
+    } else {
+      $(".accordion").removeClass("active");
+      $(this).parent().parent().addClass("active");
+    }
+  })
+
+  $('.counter').each(function() {
+    var $this = $(this),
+        countTo = $this.attr('data-count');
+    
+    $({ countNum: $this.text()}).animate({
+      countNum: countTo
+    },
+  
+    {
+  
+      duration: 6000,
+      easing:'linear',
+      step: function() {
+        $this.text(Math.floor(this.countNum));
+      },
+      complete: function() {
+        $this.text(this.countNum);
+        //alert('finished');
+      }
+  
+    });  
+    
+    
+  
+  });
+
+
+
+});
