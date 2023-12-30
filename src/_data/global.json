@@ -58,7 +58,7 @@
   "home_image":"/assets/static/background.jpg",
 
 
-
+  "c_gray": "#727272",
   "c_primary": "#000000",
   "c_secondary": "#000000",
   "c_accent": "#ff0000",

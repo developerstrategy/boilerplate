@@ -15,19 +15,31 @@
     height: 40px;
     cursor: pointer;
   }
+
+  .list-circle{
+    transition: all .3s ease;
+  }
+
+
 }
 .accordion-wrap.accordion-faqs {
   .accordion {
-    transition: max-height 0.3s ease;
+    transition: max-height 0.5s ease;
     max-height: 68px;
   }
   .active.accordion {
     max-height: 300px;
   }
-
+  .accordion-inner{
+    padding: 16px;
+  }
   .active {
+    .list-circle{
+      transform: rotate(180deg);
+    }
+
     .accordion-inner {
-      padding: 24px;
+      padding: 16px;
       background-color: #fff;
       // svg {
       //   transform: rotate(0.5turn);
@@ -37,9 +49,7 @@
       //   }
       // }
     }
-    .list-circle {
-      border: 1px solid rgb(247 247 247 / 30%);
-    }
+
   }
 }
 

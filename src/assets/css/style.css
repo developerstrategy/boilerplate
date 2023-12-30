@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
 @font-face {
   font-family: "font-light";
   src: url("/assets/fonts/neutrif/font-light.woff2") format("woff2"), url("/assets/fonts/neutrif/font-light.otf") format("otf");
@@ -7,7 +8,6 @@
 @font-face {
   font-family: "font-regular";
   src: url("/assets/fonts/neutrif/font-regular.woff2") format("woff2"), url("/assets/fonts/neutrif/font-regular.woff") format("woff");
-  font-display: swap;
 }
 @font-face {
   font-family: "font-bold";
@@ -3665,7 +3665,7 @@ mark {
     line-height: 1.2;
   }
   .p1 {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.4;
   }
   .p2 {
@@ -14737,8 +14737,8 @@ svg#bubble-whatsapp-icon path {
 }
 
 .google-text {
-  max-height: 58px;
-  min-height: 58px;
+  max-height: 67px;
+  min-height: 67px;
   text-overflow: ellipsis;
   display: -webkit-box;
   margin-bottom: 16px;
@@ -14858,20 +14858,26 @@ svg#bubble-whatsapp-icon path {
   height: 40px;
   cursor: pointer;
 }
+.accordion-wrap .list-circle {
+  transition: all 0.3s ease;
+}
 
 .accordion-wrap.accordion-faqs .accordion {
-  transition: max-height 0.3s ease;
+  transition: max-height 0.5s ease;
   max-height: 68px;
 }
 .accordion-wrap.accordion-faqs .active.accordion {
   max-height: 300px;
 }
-.accordion-wrap.accordion-faqs .active .accordion-inner {
-  padding: 24px;
-  background-color: #fff;
+.accordion-wrap.accordion-faqs .accordion-inner {
+  padding: 16px;
 }
 .accordion-wrap.accordion-faqs .active .list-circle {
-  border: 1px solid rgba(247, 247, 247, 0.3);
+  transform: rotate(180deg);
+}
+.accordion-wrap.accordion-faqs .active .accordion-inner {
+  padding: 16px;
+  background-color: #fff;
 }
 
 .accordion-wrap.accordion-border .accordion {
@@ -14937,9 +14943,23 @@ svg {
   color: var(--c-primary);
 }
 
+.c-gray {
+  color: var(--c-gray);
+}
+
 .bg-color {
   background-color: var(--bg-light);
   color: var(--c-bg-light);
+}
+
+.bold {
+  color: #b40016;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #b40016;
+  border: 1px solid #b40016;
 }
 
 html {
@@ -15782,4 +15802,116 @@ a:hover {
 .accordion-end {
   border: 1px dashed white;
   border-radius: 20px;
+}
+
+.list-bullet li {
+  list-style: none;
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 8px;
+}
+.list-bullet li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: #b40016;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.list-bullet li:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Ctitle%3Echeck%3C/title%3E%3Cg fill='%23FFFFFF'%3E%3Cpath d='M10.293,1.293,4,7.586,1.707,5.293A1,1,0,0,0,.293,6.707l3,3a1,1,0,0,0,1.414,0l7-7a1,1,0,0,0-1.414-1.414Z' fill='%23FFFFFF'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+.list-bullet.list-valid li:before {
+  background-color: #76ae4a;
+}
+.list-bullet li.error:before {
+  background-color: #b40016;
+}
+.list-bullet li.error:after {
+  content: "";
+  top: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg stroke-width='1' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='1.5' y1='1.5' x2='10.5' y2='10.5'%3E%3C/line%3E %3Cline x1='10.5' y1='1.5' x2='1.5' y2='10.5'%3E%3C/line%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bullet:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: #b40016;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.bullet:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Ctitle%3Echeck%3C/title%3E%3Cg fill='%23FFFFFF'%3E%3Cpath d='M10.293,1.293,4,7.586,1.707,5.293A1,1,0,0,0,.293,6.707l3,3a1,1,0,0,0,1.414,0l7-7a1,1,0,0,0-1.414-1.414Z' fill='%23FFFFFF'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.tp-star__canva {
+  fill: #00b67a;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.text {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+
+.box-image {
+  border-radius: 20px;
+}
+.box-image img {
+  position: relative;
+  bottom: -32px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .box-image img {
+    width: initial;
+    position: absolute;
+    bottom: -32px;
+    max-height: 160%;
+  }
+}
+
+.text-v {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.text-v img {
+  max-width: 100px;
+  margin-bottom: 8px;
+}
+
+.link4 {
+  color: #b40016;
+}
+.link4::after {
+  content: "";
+  background-color: #b40016;
+}
+
+.script {
+  font-family: "Caveat", cursive;
 }

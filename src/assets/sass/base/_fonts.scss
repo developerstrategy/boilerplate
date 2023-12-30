@@ -8,7 +8,6 @@
   font-family: "font-regular";
   src: url("/assets/fonts/neutrif/font-regular.woff2") format("woff2"),
     url("/assets/fonts/neutrif/font-regular.woff") format("woff");
-    font-display: swap;  
 }
 
 @font-face {
@@ -17,3 +16,6 @@
     url("/assets/fonts/futura/font-bold.woff") format("woff");
     font-display: swap;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');

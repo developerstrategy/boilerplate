@@ -12,20 +12,20 @@ layout: base.njk
     <div class="container-5 ">
       <span class="c-primary fluid-5-r ">¿Buscas destacar con landing pages únicas?</span>
       <span class="fluid-5-r pt-64 pb-64 c-secondary">
-        {% call insert.splitenpalabras('En Boilerplate, creamos landing pages innovadoras y personalizadas para que tu negocio resalte en la web. Nuestro equipo especializado utiliza las últimas tendencias y tecnologías para garantizar resultados efectivos.') %} {% endcall %}
+        {% call insert.splitenpalabras('En Boilerplate, creamos landing pages innovadoras y personalizadas para que tu
+        negocio resalte en la web. Nuestro equipo especializado utiliza las últimas tendencias y tecnologías para
+        garantizar resultados efectivos.') %} {% endcall %}
       </span>
     </div>
   </section>
-
-  <section class="front-section bg-light height-full-2 front-section ptr-120 pbr-120">
+  <section class="front-section bg-light  ptr-120 pbr-120">
     <div class="container-5 mb-64">
       <div class="row">
         <div class="col-xs-12 col-md-6  mdmax:mb-42 ">
           <div class="rat-1-1">
-            <div class="rat-content  align-center">
+            <div class="rat-content ">
               <a href="/about/">
-                <img data-aos="fade-up" width="100%" height="100%" src="{{global.imageDir}}/galeria/3.jpg"
-                  alt="Clínica Estética y Dental">
+                <img class="border-20" width="100%" src="/assets/static/images/libro.png" alt="">
               </a>
             </div>
           </div>
@@ -36,24 +36,26 @@ layout: base.njk
             </h2>
             <div class="mb-24">
               <p class="text-16-r" data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
-                En Boilerplate, nos especializamos en el diseño y desarrollo de landing pages atractivas y efectivas. Con un enfoque en la innovación y la creatividad, nuestro equipo trabaja para garantizar que tu página no solo luzca bien, sino que también convierta visitantes en clientes. <b>Contacta con nosotros para saber más.</b>
+                En Boilerplate, nos especializamos en el diseño y desarrollo de landing pages atractivas y efectivas.
+                Con un enfoque en la innovación y la creatividad, nuestro equipo trabaja para garantizar que tu página
+                no solo luzca bien, sino que también convierta visitantes en clientes. <b>Contacta con nosotros para
+                  saber más.</b>
               </p>
             </div>
-            <div><a data-aos="fade-up" data-aos-once="true" data-aos-delay="500" class="link-line" href="/sobre-boilerplate/">SOBRE NOSOTROS </a></div>
+            <div><a data-aos="fade-up" data-aos-once="true" data-aos-delay="500" class="link-line"
+                href="/sobre-boilerplate/">SOBRE NOSOTROS </a></div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-
-
   <div class="container-fullpage front-section bg-image bg-middle  bg-colors-1 ">
     <div class="bg-middle">
       <section class="inview container pt-64 pb-64 height-xl ">
         <div class="row align-middle text-center mb-64">
           <div class="col-xs-12 mb-16">
-            <span class="fluid-3-r "> {% call insert.splitenpalabras('Esté año vamos a revitalizar la navidad') %} {% endcall %}
+            <span class="fluid-3-r "> {% call insert.splitenpalabras('Esté año vamos a revitalizar la navidad') %} {%
+              endcall %}
             </span>
           </div>
           <div class="col-xs-12">
@@ -129,9 +131,6 @@ layout: base.njk
       </section>
     </div>
   </div>
-
-
-
   <section id="featured-articles" class="featured-articles front-section bg-dark has-light pt-64 ">
     <div class="container-3 mb-64">
       <div class="row">
@@ -140,39 +139,30 @@ layout: base.njk
           <h4 class="fluid-8-r text-center ">La excelencia en landing pages</h4>
         </div>
       </div>
-    </div> 
+    </div>
     <div class="container-3">
       <div class="row">
         <div class="col-xs-12">
           <ul role="list" class="list-clear flow">
             {% for servicios in collections.servicios %}
-              {% if  loop.index < 4 %}  
-                      {% include 'servicios-loop.njk' %}
-              {% endif %}
-            {% endfor %}
-          </ul>
+            {% if loop.index < 4 %} {% include 'servicios-loop.njk' %} {% endif %} {% endfor %} </ul>
         </div>
       </div>
     </div>
   </section>
-
   <section class="front-section bg- pt-64 pb-64">
     <div class="container">
-
-<div class="row">
-  <div class="col-xs-12 text-center">
-    <h3 class="fluid-5-b mb-24">Boilerplate <br> te informa</h3>
-  </div>
-</div>
-
-
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h3 class="fluid-5-b mb-24">Boilerplate <br> te informa</h3>
+        </div>
+      </div>
       <div class="row">
         <div class="col-xs-12">
-     
           <div class="blog-intro">
             <ul role="list" class="list-clear blog-intro-inner">
               {% for blog in collections.blog | reverse %}
-                {% include 'blog-loop.njk' %}
+              {% include 'blog-loop.njk' %}
               {% endfor %}
             </ul>
           </div>
@@ -180,14 +170,7 @@ layout: base.njk
       </div>
     </div>
   </section>
-
-
-
-
   <section class="inview pt-64 ">
-
-
-
     <div class="row align-middle text-center">
       <div class="col-xs-12 mb-24">
         <span class="fluid-5-b accent">Ellos son la voz de nuestro trabajo
@@ -197,8 +180,6 @@ layout: base.njk
         <span class="fluid-8-r"> Lo que opinan nuestros clientes: </span>
       </div>
     </div>
-
-
     <div class="marquee">
       <div class="marquee--inner">
         <span class="marquee--span">
@@ -209,20 +190,31 @@ layout: base.njk
               {% endcall %}
             </div>
             <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Trabajo con ellos hace casi 4 años, te ayudan en todo momento, las formaciones que ofrecen son muy buenas e interesantes. Grandes profesionales, trato excepcional, recomiendo 100%.'
+              {% call insert.comentario('marketing-spot' ,'Trabajo con ellos hace casi 4 años, te ayudan en todo
+              momento, las formaciones que ofrecen son muy buenas e interesantes. Grandes profesionales, trato
+              excepcional, recomiendo 100%.'
               ,'sara marrahi','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
               {% endcall %} </div>
             <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Estamos encantados de trabajar con un equipo tan competente desde un punto de vista profesional; y tan amable y acogedor personalmente. Todos sus servicios son recomendables 100%'
-              ,'Dentinova Ortodoncia & Kids','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
+              {% call insert.comentario('marketing-spot' ,'Estamos encantados de trabajar con un equipo tan competente
+              desde un punto de vista profesional; y tan amable y acogedor personalmente. Todos sus servicios son
+              recomendables 100%'
+              ,'Dentinova Ortodoncia &
+              Kids','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
               {% endcall %} </div>
             <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Personal muy profesional, trato cercano y amable. Llevamos un par de años colaborando con ellos y estamos contentos. Es muy cómodo trabajar con HSG. Especial mención a Marisol hace que el trabajo sea sencillo, muy resolutiva ante cualquier incidencia. HSG Service lo recomiendo 100%'
-              ,'MINIM. Tu Ortodoncia Invisible','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
+              {% call insert.comentario('marketing-spot' ,'Personal muy profesional, trato cercano y amable. Llevamos un
+              par de años colaborando con ellos y estamos contentos. Es muy cómodo trabajar con HSG. Especial mención a
+              Marisol hace que el trabajo sea sencillo, muy resolutiva ante cualquier incidencia. HSG Service lo
+              recomiendo 100%'
+              ,'MINIM. Tu Ortodoncia
+              Invisible','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
               {% endcall %}
             </div>
             <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Hice con ellos la formación de primeras visitas y las técnicas que me han dado las comencé a usar desde el primer día, los resultados han sido muy buenos, puedo notar a los pacientes más contentos y ya trabajamos de una manera mas organizada'
+              {% call insert.comentario('marketing-spot' ,'Hice con ellos la formación de primeras visitas y las
+              técnicas que me han dado las comencé a usar desde el primer día, los resultados han sido muy buenos, puedo
+              notar a los pacientes más contentos y ya trabajamos de una manera mas organizada'
               ,'Alesanko Martinez','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
               {% endcall %} </div>
           </div>
@@ -235,20 +227,31 @@ layout: base.njk
               {% endcall %}
             </div>
             <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Trabajo con ellos hace casi 4 años, te ayudan en todo momento, las formaciones que ofrecen son muy buenas e interesantes. Grandes profesionales, trato excepcional, recomiendo 100%.'
+              {% call insert.comentario('marketing-spot' ,'Trabajo con ellos hace casi 4 años, te ayudan en todo
+              momento, las formaciones que ofrecen son muy buenas e interesantes. Grandes profesionales, trato
+              excepcional, recomiendo 100%.'
               ,'sara marrahi','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
               {% endcall %} </div>
             <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Estamos encantados de trabajar con un equipo tan competente desde un punto de vista profesional; y tan amable y acogedor personalmente. Todos sus servicios son recomendables 100%'
-              ,'Dentinova Ortodoncia & Kids','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
+              {% call insert.comentario('marketing-spot' ,'Estamos encantados de trabajar con un equipo tan competente
+              desde un punto de vista profesional; y tan amable y acogedor personalmente. Todos sus servicios son
+              recomendables 100%'
+              ,'Dentinova Ortodoncia &
+              Kids','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
               {% endcall %} </div>
             <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Personal muy profesional, trato cercano y amable. Llevamos un par de años colaborando con ellos y estamos contentos. Es muy cómodo trabajar con HSG. Especial mención a Marisol hace que el trabajo sea sencillo, muy resolutiva ante cualquier incidencia. HSG Service lo recomiendo 100%'
-              ,'MINIM. Tu Ortodoncia Invisible','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
+              {% call insert.comentario('marketing-spot' ,'Personal muy profesional, trato cercano y amable. Llevamos un
+              par de años colaborando con ellos y estamos contentos. Es muy cómodo trabajar con HSG. Especial mención a
+              Marisol hace que el trabajo sea sencillo, muy resolutiva ante cualquier incidencia. HSG Service lo
+              recomiendo 100%'
+              ,'MINIM. Tu Ortodoncia
+              Invisible','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
               {% endcall %}
             </div>
             <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Hice con ellos la formación de primeras visitas y las técnicas que me han dado las comencé a usar desde el primer día, los resultados han sido muy buenos, puedo notar a los pacientes más contentos y ya trabajamos de una manera mas organizada'
+              {% call insert.comentario('marketing-spot' ,'Hice con ellos la formación de primeras visitas y las
+              técnicas que me han dado las comencé a usar desde el primer día, los resultados han sido muy buenos, puedo
+              notar a los pacientes más contentos y ya trabajamos de una manera mas organizada'
               ,'Alesanko Martinez','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
               {% endcall %} </div>
           </div>
@@ -256,225 +259,193 @@ layout: base.njk
       </div>
     </div>
   </section>
-
-<section>
-  <div class="row">
-    <div class="col-xs-12">ojjojoi</div>
-  </div>
-</section>
-
-
-
-<section class="inview container pt-64 pb-64 ">
-
-
-  <div class="row align-middle text-center pb-64">
-    <div class="col-xs-12 mb-24">
-      <span class="fluid-5-b accent">Planes para nuestros socios </span>
+  <section>
+    <div class="row">
+      <div class="col-xs-12">ojjojoi</div>
     </div>
-    <div class="col-xs-12">
-      <span class="fluid-8-r">
-        Elige tu plan adaptado a las necesidades de tu negocio. El plan básico
-        está pensado para medianas- pequeñas clínicas y el plan vip está
-        creado para clínicas de grandes dimensiones.
-      </span>
-    </div>
-  </div>
-
-
-  <div class="container-2">
-    <div class="row align-middle">
-      <div class="col-xs-6">
-        <ul class="list-clear p1 box-list text-center">
-          <li> <span class="fluid-7-b accent">Básico</span> </li>
-
-          <li> <span class="p2 accent">The best 1000+ Prompts for Marketing professionals</span> </li>
-
-
-<hr>
-<div class="is-flex  align-items-center content-center">
-  <div class="pt-24 pb-24 fluid-9-b c-dark-grey mr-16">  37€</div>
-  <div class="pt-24 pb-24 fluid-4-b">  37€</div>
-</div>
-
-<div class="text-left">
-  
-            <li><b class="fluid-8-b c-primary"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em" class="plasmic-default__svg ρd__all ρd__svg ρo3X1B" role="img"><path fill="#fff" d="M6 7h13v11H6z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.413-1.414-5.657 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="#34BC5B"></path></svg> </b><p>Financiación con tarifas de grupo</p></li>
-            <li> <b class="fluid-8-b c-primary"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em" class="plasmic-default__svg ρd__all ρd__svg ρo3X1B" role="img"><path fill="#fff" d="M6 7h13v11H6z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.413-1.414-5.657 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="#34BC5B"></path></svg> </b> Descuentos de grupo en depósitos dentales</li>
-            <li><b class="fluid-8-b c-primary"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em" class="plasmic-default__svg ρd__all ρd__svg ρo3X1B" role="img"><path fill="#fff" d="M6 7h13v11H6z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.413-1.414-5.657 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="#34BC5B"></path></svg> </b>Ortodoncia invisible</li>
-            <li><b class="fluid-8-b c-primary"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em" class="plasmic-default__svg ρd__all ρd__svg ρo3X1B" role="img"><path fill="#fff" d="M6 7h13v11H6z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.413-1.414-5.657 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="#34BC5B"></path></svg> </b>Grandes descuentos en compra de maquinaria dental</li>
-            <li><b class="fluid-8-b c-primary"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em" class="plasmic-default__svg ρd__all ρd__svg ρo3X1B" role="img"><path fill="#fff" d="M6 7h13v11H6z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.413-1.414-5.657 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="#34BC5B"></path></svg> </b>Cursos de formación</li>
-            <li><b class="fluid-8-b c-error pr-8"> ✘</b>Descuentos en implantes</li>
-            <li><b class="fluid-8-b c-error  pr-8"> ✘</b>Adhesión a Cooperativa Medical Solutions SCCL</li>
-</div>
-        </ul>
+  </section>
+  <section class="inview container pt-64 pb-64 ">
+    <div class="row align-middle text-center pb-64">
+      <div class="col-xs-12 mb-24">
+        <span class="fluid-5-b accent">Planes para nuestros socios </span>
       </div>
-      <div class="col-xs-6">
+      <div class="col-xs-12">
+        <span class="fluid-8-r">
+          Elige tu plan adaptado a las necesidades de tu negocio. El plan básico
+          está pensado para medianas- pequeñas clínicas y el plan vip está
+          creado para clínicas de grandes dimensiones.
+        </span>
+      </div>
+    </div>
+    <div class="container-9">
+      <div class="row align-middle">
+        <div class="col-xs-6">
 
 
 
-
-        <div class="box-list">
-          <ul class="list-clear p1  text-center mb-24">
-            <li> <span class="fluid-7-b accent">VIP </span> </li>
-            <li> <span class="p2 accent">The best 1000+ Prompts for Marketing professionals</span> </li>
+          <div class="bg-white p-16 text-center">
+            <span class="fluid-7-b ">Básico</span> <br>
+            <span class="p2 ">The best 1000+ Prompts for Marketing professionals</span>
             <hr>
             <div class="is-flex  align-items-center content-center">
-              <div class="pt-24 pb-24 fluid-9-b c-dark-grey mr-16">  37€</div>
-              <div class="pt-24 pb-24 fluid-4-b">  37€</div>
+              <div class="pt-24 pb-24 fluid-9-b c-dark-grey mr-16"> 37€</div>
+              <div class="pt-24 pb-24 fluid-4-b"> 37€</div>
             </div>
-            <div class="tooltip bold"> 80% OFF - END OF THE YEAR SALE
-            </div>
-            <br>
-            <hr>
-            <div class="text-left">
-            <li><b class="fluid-8-b c-primary"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em" class="plasmic-default__svg ρd__all ρd__svg ρo3X1B" role="img"><path fill="#fff" d="M6 7h13v11H6z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.413-1.414-5.657 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="#34BC5B"></path></svg> </b>Financiación con tarifas de grupo</li>
-            <li><b class="fluid-8-b c-primary"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em" class="plasmic-default__svg ρd__all ρd__svg ρo3X1B" role="img"><path fill="#fff" d="M6 7h13v11H6z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.413-1.414-5.657 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="#34BC5B"></path></svg> </b>Descuentos de grupo en depósitos dentales</li>
-            <li><b class="fluid-8-b c-primary"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em" class="plasmic-default__svg ρd__all ρd__svg ρo3X1B" role="img"><path fill="#fff" d="M6 7h13v11H6z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.413-1.414-5.657 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="#34BC5B"></path></svg> </b>Ortodoncia invisible</li>
-            <li><b class="fluid-8-b c-primary"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em" class="plasmic-default__svg ρd__all ρd__svg ρo3X1B" role="img"><path fill="#fff" d="M6 7h13v11H6z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.413-1.414-5.657 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="#34BC5B"></path></svg> </b>Grandes descuentos en compra de maquinaria dental</li>
-            <li><b class="fluid-8-b c-primary"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em" class="plasmic-default__svg ρd__all ρd__svg ρo3X1B" role="img"><path fill="#fff" d="M6 7h13v11H6z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.413-1.414-5.657 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="#34BC5B"></path></svg> </b>Cursos de formación</li>
-            <li><b class="fluid-8-b c-primary"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em" class="plasmic-default__svg ρd__all ρd__svg ρo3X1B" role="img"><path fill="#fff" d="M6 7h13v11H6z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.413-1.414-5.657 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="#34BC5B"></path></svg> </b>Descuentos en implantes</li>
-            <li><b class="fluid-8-b c-primary"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em" class="plasmic-default__svg ρd__all ρd__svg ρo3X1B" role="img"><path fill="#fff" d="M6 7h13v11H6z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.413-1.414-5.657 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="#34BC5B"></path></svg> </b>Adhesión a Cooperativa Medical Solutions SCCL</li>
-                 
-                </div>
+          </div>
+
+          
+          <div class="text-left">
+            <ul class="p1 box-list  list-bullet list-valid">
+              <li >
+                <p>Financiación con tarifas de grupo</p>
+              </li>
+              <li> Descuentos de grupo en depósitos dentales</li>
+              <li>Ortodoncia invisible</li>
+              <li>Grandes descuentos en compra de maquinaria dental</li>
+              <li>Cursos de formación</li>
+              <li class="error">  Descuentos en implantes</li>
+              <li class="error">   Adhesión a Cooperativa Medical Solutions SCCL</li>
+          </div>
           </ul>
-          <button class="btn btn-primary btn--full mb-24">Get chat button</button>
-
-
-     <img class="w-100" src="https://img.plasmic.app/img-optimizer/v1/img/5c09283aac34c6ddd3f47ced0b7daa42.png?q=7" alt="">
-
-
         </div>
-
-
-
-
+        <div class="col-xs-6">
+          <div class="box-list">
+            <ul class="list-clear p1  text-center mb-24">
+              <li> <span class="fluid-7-b accent">VIP </span> </li>
+              <li> <span class="p2 accent">The best 1000+ Prompts for Marketing professionals</span> </li>
+              <hr>
+              <div class="is-flex  align-items-center content-center">
+                <div class="pt-24 pb-24 fluid-9-b c-dark-grey mr-16"> 37€</div>
+                <div class="pt-24 pb-24 fluid-4-b"> 37€</div>
+              </div>
+              <div class="tooltip bold"> 80% OFF - END OF THE YEAR SALE
+              </div>
+              <br>
+              <hr>
+              <div class="text-left">
+                <li>Financiación con tarifas de grupo</li>
+                <li>Descuentos de grupo en depósitos dentales</li>
+                <li>Ortodoncia invisible</li>
+                <li>Grandes descuentos en compra de maquinaria dental</li>
+                <li>Cursos de formación</li>
+                <li>Descuentos en implantes</li>
+                <li>Adhesión a Cooperativa Medical Solutions SCCL</li>
+              </div>
+            </ul>
+            <button class="btn btn-primary btn--full mb-24">Get chat button</button>
+            <img class="w-100"
+              src="https://img.plasmic.app/img-optimizer/v1/img/5c09283aac34c6ddd3f47ced0b7daa42.png?q=7" alt="">
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-
-
-
-<section class="inview  ptr-120 pbr-120 ">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-4 smmax:mb-24">
-        <span class="fluid-6-r">Tienes alguna pregunta?</span>
-      </div>
-      <div class=" col-xs-12  col-sm-8">
-
-
-        <div class="accordion-wrap accordion-faqs">
-          <div class="accordion">
-            <div class="accordion-inner p-24">
-              <div class="accordion-header is-flex">
-                <div class="list-circle">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <title>down-arrow</title>
-                    <g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="none" stroke="#212121"
-                      stroke-miterlimit="10">
-                      <polyline points="2,7 12,17 22,7 " transform="translate(0, 0)"></polyline>
-                    </g>
-                  </svg>
+  </section>
+  <section class="inview  ptr-120 pbr-120 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 smmax:mb-24">
+          <span class="fluid-6-r">Tienes alguna pregunta?</span>
+        </div>
+        <div class=" col-xs-12  col-sm-8">
+          <div class="accordion-wrap accordion-faqs">
+            <div class="accordion">
+              <div class="accordion-inner">
+                <div class="accordion-header is-flex">
+                  <div class="list-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <title>down-arrow</title>
+                      <g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="none" stroke="#212121"
+                        stroke-miterlimit="10">
+                        <polyline points="2,7 12,17 22,7 " transform="translate(0, 0)"></polyline>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="fluid-8-r"> ¿Dónde coloco el código QR en el restaurante?</div>
                 </div>
-                <div class="fluid-8-r"> ¿Dónde coloco el código QR en el restaurante?</div>
+                <div class="accordion-content">
+                  <div class="text-14-r mt-16">
+                    Imprime el código QR vectorizado, y haz tantas copias como necesites. Colócalo en mesas, paredes,
+                    manteles de papel.
+                  </div>
+                </div>
               </div>
-              <div class="accordion-content">
-                <div class="text-14-r mt-16">
-                  Imprime el código QR vectorizado, y haz tantas copias como necesites. Colócalo en mesas, paredes,
-                  manteles de papel.
+            </div>
+            <div class="accordion">
+              <div class="accordion-inner">
+                <div class="accordion-header is-flex">
+                  <div class="list-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <title>down-arrow</title>
+                      <g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="none" stroke="#212121"
+                        stroke-miterlimit="10">
+                        <polyline points="2,7 12,17 22,7 " transform="translate(0, 0)"></polyline>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="fluid-8-r"> ¿Es necesario instalar una App?</div>
+                </div>
+                <div class="accordion-content">
+                  <div class="text-14-r mt-16">
+                    No, no queremos poner ninguna barrera a los clientes que lleguen a tu restaurante. Pensamos que es
+                    importante no tener que descargar nada cuando quieran ver el menú o la carta digital del restaurante
+                    rápidamente.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-inner">
+                <div class="accordion-header is-flex">
+                  <div class="list-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <title>down-arrow</title>
+                      <g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="none" stroke="#212121"
+                        stroke-miterlimit="10">
+                        <polyline points="2,7 12,17 22,7 " transform="translate(0, 0)"></polyline>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="fluid-8-r"> ¿Necesito tener página web?</div>
+                </div>
+                <div class="accordion-content">
+                  <div class="text-14-r mt-16">
+                    No, nuestra carta digital es independiente. No necesitas ningún tipo de web, nosotros proporcionamos
+                    todo el sistema.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-inner">
+                <div class="accordion-header is-flex">
+                  <div class="list-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <title>down-arrow</title>
+                      <g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="none" stroke="#212121"
+                        stroke-miterlimit="10">
+                        <polyline points="2,7 12,17 22,7 " transform="translate(0, 0)"></polyline>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="fluid-8-r">¿Cuánto cuesta este servicio?
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="text-14-r mt-16">
+                    Tu eliges, si quieres pagar cada mes por sólo 14,90€ al mes, o aprovechando la promoción , contratar
+                    de forma anual por 149,90€ llevándote dos meses gratis .
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="accordion">
-            <div class="accordion-inner p-16">
-              <div class="accordion-header is-flex">
-                <div class="list-circle">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <title>down-arrow</title>
-                    <g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="none" stroke="#212121"
-                      stroke-miterlimit="10">
-                      <polyline points="2,7 12,17 22,7 " transform="translate(0, 0)"></polyline>
-                    </g>
-                  </svg>
-                </div>
-                <div class="fluid-8-r"> ¿Es necesario instalar una App?</div>
-              </div>
-              <div class="accordion-content">
-                <div class="text-14-r mt-16">
-                  No, no queremos poner ninguna barrera a los clientes que lleguen a tu restaurante. Pensamos que es
-                  importante no tener que descargar nada cuando quieran ver el menú o la carta digital del restaurante
-                  rápidamente.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion">
-            <div class="accordion-inner p-16">
-              <div class="accordion-header is-flex">
-                <div class="list-circle">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <title>down-arrow</title>
-                    <g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="none" stroke="#212121"
-                      stroke-miterlimit="10">
-                      <polyline points="2,7 12,17 22,7 " transform="translate(0, 0)"></polyline>
-                    </g>
-                  </svg>
-                </div>
-                <div class="fluid-8-r"> ¿Necesito tener página web?</div>
-              </div>
-              <div class="accordion-content">
-                <div class="text-14-r mt-16">
-                  No, nuestra carta digital es independiente. No necesitas ningún tipo de web, nosotros proporcionamos
-                  todo el sistema.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion">
-            <div class="accordion-inner p-16">
-              <div class="accordion-header is-flex">
-                <div class="list-circle">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <title>down-arrow</title>
-                    <g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="none" stroke="#212121"
-                      stroke-miterlimit="10">
-                      <polyline points="2,7 12,17 22,7 " transform="translate(0, 0)"></polyline>
-                    </g>
-                  </svg>
-                </div>
-                <div class="fluid-8-r">¿Cuánto cuesta este servicio?
-                </div>
-              </div>
-              <div class="accordion-content">
-                <div class="text-14-r mt-16">
-                  Tu eliges, si quieres pagar cada mes por sólo 14,90€ al mes, o aprovechando la promoción , contratar de forma anual por 149,90€ llevándote dos meses gratis .
-                </div>
-              </div>
-            </div>
+          <div class="accordion-end p-16 text-center">
+            <div class="fluid-8-b">Sigues teniendo dudas...</div>
+            <p>No worrieeJust drop me an email at hello@boilerplate.com and I'll get back to you.</p>
           </div>
         </div>
-
-        <div class="accordion-end p-16 text-center">
-          <div class="fluid-8-b">Sigues teniendo dudas...</div>
-<p>No worrieeJust drop me an email at hello@boilerplate.com and I'll get back to you.</p>
-        </div>
-
-
-
       </div>
     </div>
-  </div>
-</section>
-
-
-
-
-
+  </section>
   {% include "components/banner.njk" %}
 </article>
