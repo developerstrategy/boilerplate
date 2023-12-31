@@ -379,41 +379,7 @@ ul.list-clear li {
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
-.blog-intro {
-  overflow: auto;
-  height: 310px;
-  @media (min-width: $break-md) {
-    overflow: initial;
-    height: auto;
-  }
-  .blog-intro-inner {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: -10px;
-    flex-wrap: nowrap;
-    width: max-content;
-    li {
-      flex-basis: 45vw;
-      padding: 16px;
-    }
-    @media (min-width: $break-md) {
-      flex-wrap: wrap;
-      width: 100%;
-      li {
-        flex-basis: 25%;
-        padding: 16px;
-      }
-    }
-    .tag-info {
-      display: none;
-    }
-    h3 {
-      min-height: 50px;
-    }
-  }
-}
+
 .pagination {
   display: flex;
   justify-content: space-between;
@@ -923,10 +889,38 @@ li.error{
 }
 
 .grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
 }
+
+.smmax\:grid-1 {
+  @media (max-width: #{$break-sm - 1}) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+}
+
+.smmax\:grid-3 {
+  @media (max-width: #{$break-sm - 1}) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+.sm\:grid-3 {
+  @media (min-width: #{$break-sm}) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+
+
 
 .text{
   position: relative;

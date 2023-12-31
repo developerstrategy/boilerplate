@@ -1,13 +1,13 @@
 .menu-mobile {
   display: block;
-  @media (min-width: $break-lg) {
+  @media (min-width: $break-sm) {
     display: none;
   }
 }
 .menu-desktop {
-  display: none;
+
   white-space: nowrap;
-  @media (min-width: $break-lg) {
+  @media (min-width: $break-sm) {
     display: flex;
   }
 
@@ -19,6 +19,11 @@
   position: relative;
   z-index: 10;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
 }
 .menu-mobile-wrap {
   position: fixed;
@@ -56,7 +61,7 @@ color: #fff;
   span {
     width: 15px;
     height: 1px;
-    background-color: white;
+    background-color: black;
     display: block;
     margin: 3px;
   }

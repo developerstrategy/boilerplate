@@ -4,7 +4,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  color: white;
+
   z-index: 100;
   height: $header-mobile;
   transition: all ease 0.3s;
@@ -12,7 +12,6 @@ header {
   align-items: center;
   font-size: 12px;
   letter-spacing: 2px;
-
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   @media (min-width: $break-md) {
@@ -41,7 +40,6 @@ header.interior {
   }
 }
 .scrolled {
-
   header {
     background-color: #f3f2f0b5;
     -webkit-backdrop-filter: blur(10px);
@@ -49,7 +47,6 @@ header.interior {
     padding-top: 40px;
     padding-bottom: 40px;
     @media (min-width: $break-md) {
-
       padding-top: 40px;
       padding-bottom: 40px;
     }
@@ -63,8 +60,6 @@ header.interior {
       min-height: 150px;
     }
   }
-
-
   .header-top {
     height: 200px;
   }
@@ -88,6 +83,41 @@ header.interior {
   }
 }
 
-.menu-desktop-wrap {
-  column-gap: 40px;
+
+
+@media (max-width: $break-sm) {
+
+  .menu-desktop-wrap {
+    column-gap: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px 20px 20px;
+    position: fixed;
+    transform: translateX(100vw);
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+    background: white;
+    text-align: center;
+    height: 100vh;
+    justify-content: flex-start;
+
+
+    li a{
+      display: inline-block;
+      font-size: 20px;
+   @include font-bold();
+      padding: 10px 0 ;
+
+    }
+
+  }
+
+  .menu-open {
+    .menu-desktop-wrap {
+      transform: translateX(0);
+    }
+  }
+
 }
