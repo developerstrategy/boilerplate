@@ -14912,7 +14912,7 @@ svg#bubble-whatsapp-icon path {
 
 .blog-intro {
   overflow: auto;
-  height: 310px;
+  height: 380px;
 }
 @media (min-width: 992px) {
   .blog-intro {
@@ -14930,15 +14930,16 @@ svg#bubble-whatsapp-icon path {
   width: max-content;
 }
 .blog-intro .blog-intro-inner li {
-  flex-basis: 45vw;
+  width: 45vw;
   padding: 16px;
 }
 @media (min-width: 992px) {
   .blog-intro .blog-intro-inner {
     flex-wrap: wrap;
+    width: 100%;
   }
   .blog-intro .blog-intro-inner li {
-    flex-basis: 33.3333%;
+    width: 33.3333%;
     padding: 16px;
   }
 }

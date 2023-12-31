@@ -1,6 +1,6 @@
 .blog-intro {
   overflow: auto;
-  height: 310px;
+  height: 380px;
   @media (min-width: $break-md) {
     overflow: initial;
     height: auto;
@@ -14,13 +14,14 @@
     flex-wrap: nowrap;
     width: max-content;
     li {
-      flex-basis: 45vw;
+      width: 45vw;
       padding: 16px;
     }
     @media (min-width: $break-md) {
       flex-wrap: wrap;
+      width: 100%;
       li {
-        flex-basis: 33.3333%;
+        width: 33.3333%;
         padding: 16px;
       }
     }
