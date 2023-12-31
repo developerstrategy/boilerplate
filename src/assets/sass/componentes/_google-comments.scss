@@ -6,10 +6,11 @@
 }
 .google-text{
 max-height: 67px;
-min-height: 67px;
+min-height: 63px;
 text-overflow: ellipsis;
 display: -webkit-box;
 margin-bottom: 16px;
+
 -webkit-line-clamp: 3;
 -webkit-box-orient: vertical;
 overflow: hidden;
