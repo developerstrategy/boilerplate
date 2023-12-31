@@ -4,7 +4,6 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-
   z-index: 100;
   height: $header-mobile;
   transition: all ease 0.3s;
@@ -82,11 +81,7 @@ header.interior {
     }
   }
 }
-
-
-
 @media (max-width: $break-sm) {
-
   .menu-desktop-wrap {
     column-gap: 40px;
     display: flex;
@@ -102,22 +97,16 @@ header.interior {
     text-align: center;
     height: 100vh;
     justify-content: flex-start;
-
-
-    li a{
+    li a {
       display: inline-block;
       font-size: 20px;
-   @include font-bold();
-      padding: 10px 0 ;
-
+      @include font-bold();
+      padding: 10px 0;
     }
-
   }
-
   .menu-open {
     .menu-desktop-wrap {
       transform: translateX(0);
     }
   }
-
 }

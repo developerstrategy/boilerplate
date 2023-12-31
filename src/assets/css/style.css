@@ -15317,8 +15317,23 @@ ul.list-clear li {
 
 .blog-section {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+}
+.blog-section > :first-child {
+  grid-column: span 1; /* Esto hará que el primer elemento ocupe dos celdas */
+}
+@media (min-width: 768px) {
+  .blog-section > :first-child {
+    grid-column: span 4; /* Esto hará que el primer elemento ocupe dos celdas */
+  }
+}
+@media (min-width: 768px) {
+  .blog-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
 }
 
 .home-section {

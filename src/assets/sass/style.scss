@@ -370,9 +370,32 @@ ul.list-clear li {
   }
 }
 .blog-section {
+
+ > :first-child {
+    grid-column: span 1; /* Esto hará que el primer elemento ocupe dos celdas */
+    @media (min-width: $break-sm) {
+      grid-column: span 4; /* Esto hará que el primer elemento ocupe dos celdas */
+
+
+    }
+  }
+
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+
+
+
+  @media (min-width: $break-sm) {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+
+
+
 }
 .home-section {
   display: grid;
