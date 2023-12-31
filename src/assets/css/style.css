@@ -3665,7 +3665,7 @@ mark {
     line-height: 1.2;
   }
   .p1 {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.4;
   }
   .p2 {
@@ -11481,6 +11481,9 @@ div.card9-wrap .rat-content:hover .card9-add {
 }
 
 @media (min-width: 1px) {
+  .ptr-64 {
+    padding-top: 64px;
+  }
   .ptr-120 {
     padding-top: 64px;
   }
@@ -11489,6 +11492,9 @@ div.card9-wrap .rat-content:hover .card9-add {
   }
 }
 @media (min-width: 768px) {
+  .ptr-64 {
+    padding-top: 64px;
+  }
   .ptr-120 {
     padding-top: 64px;
   }
@@ -11497,6 +11503,9 @@ div.card9-wrap .rat-content:hover .card9-add {
   }
 }
 @media (min-width: 992px) {
+  .ptr-64 {
+    padding-top: 64px;
+  }
   .ptr-120 {
     padding-top: 120px;
   }
@@ -11505,6 +11514,9 @@ div.card9-wrap .rat-content:hover .card9-add {
   }
 }
 @media (min-width: 1280px) {
+  .ptr-64 {
+    padding-top: 64px;
+  }
   .ptr-120 {
     padding-top: 120px;
   }
@@ -14867,6 +14879,54 @@ svg#bubble-whatsapp-icon path {
     left: -100%;
   }
 }
+.list-bullet li {
+  list-style: none;
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 8px;
+}
+.list-bullet li:before {
+  content: "";
+  top: 3px;
+  position: absolute;
+  left: 0;
+  background-color: #b40016;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Ctitle%3Echeck%3C/title%3E%3Cg fill='%23FFFFFF'%3E%3Cpath d='M10.293,1.293,4,7.586,1.707,5.293A1,1,0,0,0,.293,6.707l3,3a1,1,0,0,0,1.414,0l7-7a1,1,0,0,0-1.414-1.414Z' fill='%23FFFFFF'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.list-bullet.list-valid li:before {
+  background-color: #76ae4a;
+}
+.list-bullet li.error:before {
+  background-color: #b40016;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg stroke-width='1' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='1.5' y1='1.5' x2='10.5' y2='10.5'%3E%3C/line%3E %3Cline x1='10.5' y1='1.5' x2='1.5' y2='10.5'%3E%3C/line%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bullet:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: #b40016;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.bullet:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Ctitle%3Echeck%3C/title%3E%3Cg fill='%23FFFFFF'%3E%3Cpath d='M10.293,1.293,4,7.586,1.707,5.293A1,1,0,0,0,.293,6.707l3,3a1,1,0,0,0,1.414,0l7-7a1,1,0,0,0-1.414-1.414Z' fill='%23FFFFFF'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
 .accordion-wrap .accordion {
   background-color: rgba(255, 255, 255, 0.5019607843);
   overflow: hidden;
@@ -15083,9 +15143,10 @@ a:hover {
 .input,
 .textarea,
 .select select {
+  padding-left: 0;
   background-color: transparent;
-  border-color: var(--c-primary);
-  border-width: 0 0 2px 0;
+  border-color: #ffffff;
+  border-width: 0 0 1px 0;
   color: var(--c-primary);
   max-width: 100%;
   width: 100%;
@@ -15108,11 +15169,14 @@ img {
 
 .form-input-label-2 > input,
 .form-input-label-2 > label,
+.form-input-label-2 > textarea,
 .error-zone > input,
 .error-zone > label {
   font-family: "font-regular";
   padding-left: 0;
   font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .form-input-label-2 input {
@@ -15180,6 +15244,10 @@ ul.list-clear li {
     width: 100vw;
     height: initial;
   }
+}
+
+.textarea {
+  min-height: 100px;
 }
 
 .front-section {
@@ -15321,11 +15389,13 @@ ul.list-clear li {
   gap: 16px;
 }
 .blog-section > :first-child {
-  grid-column: span 1; /* Esto hará que el primer elemento ocupe dos celdas */
+  grid-column: span 1;
+  /* Esto hará que el primer elemento ocupe dos celdas */
 }
 @media (min-width: 768px) {
   .blog-section > :first-child {
-    grid-column: span 4; /* Esto hará que el primer elemento ocupe dos celdas */
+    grid-column: span 4;
+    /* Esto hará que el primer elemento ocupe dos celdas */
   }
 }
 @media (min-width: 768px) {
@@ -15803,61 +15873,6 @@ a:hover {
 .accordion-end {
   border: 1px dashed white;
   border-radius: 20px;
-}
-
-.list-bullet li {
-  list-style: none;
-  padding-left: 30px;
-  position: relative;
-  margin-bottom: 8px;
-}
-.list-bullet li:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  background-color: #b40016;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-.list-bullet li:after {
-  content: "";
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  top: 5px;
-  left: 4px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Ctitle%3Echeck%3C/title%3E%3Cg fill='%23FFFFFF'%3E%3Cpath d='M10.293,1.293,4,7.586,1.707,5.293A1,1,0,0,0,.293,6.707l3,3a1,1,0,0,0,1.414,0l7-7a1,1,0,0,0-1.414-1.414Z' fill='%23FFFFFF'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-}
-.list-bullet.list-valid li:before {
-  background-color: #76ae4a;
-}
-.list-bullet li.error:before {
-  background-color: #b40016;
-}
-.list-bullet li.error:after {
-  content: "";
-  top: 4px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg stroke-width='1' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='1.5' y1='1.5' x2='10.5' y2='10.5'%3E%3C/line%3E %3Cline x1='10.5' y1='1.5' x2='1.5' y2='10.5'%3E%3C/line%3E%3C/g%3E%3C/svg%3E");
-}
-
-.bullet:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  background-color: #b40016;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-.bullet:after {
-  content: "";
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  top: 5px;
-  left: 4px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Ctitle%3Echeck%3C/title%3E%3Cg fill='%23FFFFFF'%3E%3Cpath d='M10.293,1.293,4,7.586,1.707,5.293A1,1,0,0,0,.293,6.707l3,3a1,1,0,0,0,1.414,0l7-7a1,1,0,0,0-1.414-1.414Z' fill='%23FFFFFF'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
 .tp-star__canva {

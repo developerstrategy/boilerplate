@@ -39,14 +39,17 @@ $width-left: calc((1280px + (100vw - 1600px) / 2));
 @import "./componentes/_bubble-whatsapp.scss";
 @import "./componentes/_google-comments.scss";
 @import "./componentes/_marquee.scss";
+@import "./componentes/_list.scss";
 @import "./componentes/_accordion.scss";
 @import "./componentes/_blog-home.scss";
+
 $primary-color: var(--primary-color);
 $c-primary: var(--c-primary);
 $c-gray: var(--c-gray);
 $c-secondary: var(--c-secondary);
 $bg-dark: var(--bg-dark);
 $c-bg-dark: var(--c-bg-dark);
+
 svg {
   fill: $c-primary;
 }
@@ -64,7 +67,6 @@ svg {
 .c-primary {
   color: $c-primary
 }
-
 .c-gray {
   color: $c-gray
 }
@@ -72,18 +74,14 @@ svg {
   background-color: var(--bg-light);
   color: var(--c-bg-light);
 }
-
-.bold{
-  color:$c-accent;
+.bold {
+  color: $c-accent;
 }
-
 .btn-primary {
   color: $c-white;
   background-color: $c-accent;
   border: 1px solid $c-accent;
-
 }
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
@@ -171,9 +169,10 @@ a {
 .input,
 .textarea,
 .select select {
+  padding-left: 0;
   background-color: transparent;
-  border-color: $c-primary;
-  border-width: 0 0 2px 0;
+  border-color: $c-white;
+  border-width: 0 0 1px 0;
   color: $c-primary;
   max-width: 100%;
   width: 100%;
@@ -191,11 +190,14 @@ img {
 }
 .form-input-label-2>input,
 .form-input-label-2>label,
+.form-input-label-2>textarea,
 .error-zone>input,
 .error-zone>label {
   font-family: "font-regular";
   padding-left: 0;
   font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 .form-input-label-2 input {
   background-color: transparent;
@@ -254,6 +256,10 @@ ul.list-clear li {
       height: initial;
     }
   }
+}
+
+.textarea{
+  min-height: 100px;
 }
 .front-section {
   z-index: 10;
@@ -370,39 +376,28 @@ ul.list-clear li {
   }
 }
 .blog-section {
-
- > :first-child {
-    grid-column: span 1; /* Esto hará que el primer elemento ocupe dos celdas */
+  > :first-child {
+    grid-column: span 1;
+    /* Esto hará que el primer elemento ocupe dos celdas */
     @media (min-width: $break-sm) {
-      grid-column: span 4; /* Esto hará que el primer elemento ocupe dos celdas */
-
-
+      grid-column: span 4;
+      /* Esto hará que el primer elemento ocupe dos celdas */
     }
   }
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-
-
-
   @media (min-width: $break-sm) {
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
   }
-
-
-
-
 }
 .home-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
-
 .pagination {
   display: flex;
   justify-content: space-between;
@@ -819,105 +814,15 @@ a:hover {
   border: 1px dashed white;
   border-radius: 20px;
 }
-.list-bullet {
-
-
-  li {
-    list-style: none;
-    padding-left: 30px;
-    position: relative;
-    margin-bottom: 8px;
-    &:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      background-color: $c-accent;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-    }
-    &:after {
-      content: '';
-      width: 12px;
-      height: 12px;
-      position: absolute;
-      top: 5px;
-      left: 4px;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Ctitle%3Echeck%3C/title%3E%3Cg fill='%23FFFFFF'%3E%3Cpath d='M10.293,1.293,4,7.586,1.707,5.293A1,1,0,0,0,.293,6.707l3,3a1,1,0,0,0,1.414,0l7-7a1,1,0,0,0-1.414-1.414Z' fill='%23FFFFFF'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-    }
-  }
-
-  &.list-valid{
-    li:before {
-
-      background-color: $c-valid;
-
-    }
-
-    
-  }
-
-
-
-
-li.error{
-  &:before {
-
-    background-color: $c-error;
-
-  }
-
-  &:after {
-    content: '';
-    top: 4px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg stroke-width='1' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='1.5' y1='1.5' x2='10.5' y2='10.5'%3E%3C/line%3E %3Cline x1='10.5' y1='1.5' x2='1.5' y2='10.5'%3E%3C/line%3E%3C/g%3E%3C/svg%3E");
-  }
-
-
-
-
-
-}
-
-
-}
-
-.bullet{
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    background-color: $c-accent;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-  }
-  &:after {
-    content: '';
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    top: 5px;
-    left: 4px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Ctitle%3Echeck%3C/title%3E%3Cg fill='%23FFFFFF'%3E%3Cpath d='M10.293,1.293,4,7.586,1.707,5.293A1,1,0,0,0,.293,6.707l3,3a1,1,0,0,0,1.414,0l7-7a1,1,0,0,0-1.414-1.414Z' fill='%23FFFFFF'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-  }
-
-}
-
-
-
 
 .tp-star__canva {
   fill: #00b67a;
 }
-
 .grid-3 {
-  display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
-
 .smmax\:grid-1 {
   @media (max-width: #{$break-sm - 1}) {
     display: grid;
@@ -925,7 +830,6 @@ li.error{
     gap: 16px;
   }
 }
-
 .smmax\:grid-3 {
   @media (max-width: #{$break-sm - 1}) {
     display: grid;
@@ -933,7 +837,6 @@ li.error{
     gap: 16px;
   }
 }
-
 .sm\:grid-3 {
   @media (min-width: #{$break-sm}) {
     display: grid;
@@ -941,58 +844,43 @@ li.error{
     gap: 16px;
   }
 }
-
-
-
-
-.text{
+.text {
   position: relative;
   display: flex;
   justify-content: flex-start;
   padding-left: 30px;
 }
-
-.box-image{
+.box-image {
   border-radius: 20px;
-
-img{
-  position: relative;
-  bottom: -32px;
-  width: 100%;
-
-  @media (min-width: $break-sm) {
-    width: initial;
-    position: absolute;
-
+  img {
+    position: relative;
     bottom: -32px;
-    max-height: 160%;
+    width: 100%;
+    @media (min-width: $break-sm) {
+      width: initial;
+      position: absolute;
+      bottom: -32px;
+      max-height: 160%;
+    }
   }
 }
-
-
-}
-
-.text-v{
+.text-v {
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
-  img{
+  img {
     max-width: 100px;
     margin-bottom: 8px;
   }
 }
-
-.link4{
+.link4 {
   color: $c-accent;
- &::after {
+  &::after {
     content: "";
-    background-color:$c-accent;
-
+    background-color: $c-accent;
+  }
 }
-}
-
-.script{
+.script {
   font-family: 'Caveat', cursive;
-
 }

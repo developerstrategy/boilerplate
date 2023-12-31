@@ -28,7 +28,7 @@ $minheaders:/* name:mobile,768,992,1280,line-height,font */
   h7: ( 10px, 12px, 1.2, "medium", ), 
   h8: ( 8px, 10px, 1.2, "medium", ), 
   h9: ( 12px, 18px, 1.2, "medium", ), 
-  p1: ( 14px, 18px, 1.4, "regular", ),
+  p1: ( 14px, 14px, 1.4, "regular", ),
   p2: ( 14px, 18px, 1.4, "regular", ),
   p3: ( 12px, 14px, 1.4, "regular", ),
   p4: ( 14px, 18px, 1.4, "medium", ), );
@@ -103,7 +103,7 @@ $height-xl: 450px ;
 
 
 $padding-top: (
-
+  ptr-64: ( 64px, 64px, 64px, 64px ),
    ptr-120: ( 64px, 64px, 120px, 120px ),
    ptr-200: ( 120px, 120px, 200px, 200px )
 ) ;

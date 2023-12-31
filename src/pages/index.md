@@ -4,7 +4,7 @@ permalink: /
 
 
 title:  The Boilerplate
-subtitle:  Una web completa actualizada a las nuevas tendencias en SEO y diseño. 
+subtitle:  Plataforma de páginas landing sin código para especialistas en marketing digital basados en datos boilerplate te permite diseñar, publicar y optimizar activos de marketing digital con seguimiento de microconversiones para obtener mejores tasas de conversión. 
 image: 7.jpgx
 
 
