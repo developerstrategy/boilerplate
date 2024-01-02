@@ -7,8 +7,8 @@ descripcion: En nuestra exposición podrás ver de primera mano diferentes model
 author: Boilerplate
 date: 2021-05-01
 tags: ["servicios"]
-image: "/assets/static/images/1.jpg"
-imagemini: "_servicios/renata.jpg"
+image: "/assets/static/images/1.webp"
+imagemini: "_servicios/renata.webp"
 imageAlt: bótox
 ---
 

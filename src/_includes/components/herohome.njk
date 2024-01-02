@@ -1,13 +1,18 @@
 <section class="inview  o-hidden ">
   <div class="video-bg">
+    {% if global.home_image %}
     {% if global.home_image.endsWith('.mp4') %}
-    <video poster="" autoplay="" muted="" loop="">
-      <source src="{{ global.home_image }}" type="video/mp4" />
-    </video>
+      <video poster="" autoplay="" muted="" loop="">
+        <source src="{{ global.home_image }}" type="video/mp4" />
+      </video>
     {% else %}
-    <img src="{{ global.home_image }}" alt="">
-    <div class=></div>
+      <img src="{{ global.home_image }}" alt="">
     {% endif %}
+  {% endif %}
+
+
+
+
   </div>
   <div class="container-2 mx-auto  ">
     <div class="row section-x height-full  align-middle text-center  ">

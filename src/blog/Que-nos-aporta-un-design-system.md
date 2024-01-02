@@ -5,7 +5,7 @@ title: Todo lo que necesitas saber sobre los Design Systems para web
 date: 2023-06-21
 fecha: 21 de junio de 2023
 tags: ["design system", "web", "UX", "UI", "SEO"]
-image: /assets/static/images/1.jpg
+image: /assets/static/images/1.webp
 imageAlt: Ilustración de un equipo de diseñadores trabajando en un Design System
 eleventyComputed:
   metaTitle: ¿Qué nos aporta un Design System para web? | Design-Systems.es

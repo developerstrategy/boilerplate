@@ -5,7 +5,7 @@ title: El futuro de la web está en los design systems
 date: 2023-06-21
 fecha: 21 de junio de 2023
 tags: ["design system", "diseño web", "UI", "UX", "SEO"]
-image: /assets/static/images/2.jpg
+image: /assets/static/images/2.webp
 imageAlt: Ilustración de un dispositivo con elementos de un Design System
 eleventyComputed:
   metaTitle: El futuro de la web está en los design systems | Design-Systems.es

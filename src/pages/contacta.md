@@ -4,7 +4,7 @@ permalink: /contacta/
 
 title: Contacta con nosotros
 subtitle: Ven a visitarnos
-image: /assets/static/images/7.jpg
+image: /assets/static/images/7.webp
 author: autor
 date: 2021-05-01
 tags: ["page"]

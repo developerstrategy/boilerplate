@@ -5,7 +5,7 @@ title: Guía completa para desarrollar un Design System efectivo
 date: 2023-06-19
 fecha: 19 de junio de 2023
 tags: ["post", "figma"]
-image: /assets/static/images/6.jpg
+image: /assets/static/images/6.webp
 imageAlt: Ilustración de un equipo trabajando en un Design System
 eleventyComputed:
   metaTitle: Cómo crear un Design System exitoso

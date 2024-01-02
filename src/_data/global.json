@@ -41,7 +41,7 @@
 
   "brands": "1,2,3,4,5,6",
   "galeria": "1,2,3,4,5,6,7,8",
-  "contact_img": "/assets/static/images/1.jpg",
+  "contact_img": "/assets/static/images/1.webp",
 
   "empresa_legal_titular": "empresa_legal_titular ",
 
@@ -55,7 +55,7 @@
   "actividad": " design systems",
 
 
-  "home_image":"/assets/static/background.jpg",
+  "home_image":"",
 
 
   "c_gray": "#727272",
@@ -96,19 +96,19 @@
 
   "personas": [
     {
-      "imagen": "/assets/static/images/person1.jpg",
+      "imagen": "/assets/static/images/person1.webp",
       "nombre": "Persona 1",
       "posicion": "Posición 1",
       "descripcion": "Descripción 1"
     },
     {
-      "imagen": "/assets/static/images/person2.jpg",
+      "imagen": "/assets/static/images/person2.webp",
       "nombre": "Persona 2",
       "posicion": "Posición 2",
       "descripcion": "Descripción 2"
     },
     {
-      "imagen": "/assets/static/images/person3.jpg",
+      "imagen": "/assets/static/images/person3.webp",
       "nombre": "Persona 3",
       "posicion": "Posición 3",
       "descripcion": "Descripción 3"

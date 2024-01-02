@@ -7,8 +7,8 @@ descripcion: Disponemos de la más amplia gama de productos tratados,
 author: {{global.empresa}}
 date: 2021-05-01
 tags: ["servicios"]
-image: "/assets/static/images/1.jpg"
-imagemini: "gava.jpg"
+image: "/assets/static/images/1.webp"
+imagemini: "gava.webp"
 imageAlt: nuestro producto
 
 ---

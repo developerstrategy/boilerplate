@@ -6,7 +6,7 @@ subtitle: Evangelizadores
 title: Nosotros
 date: 2023-06-19
 tags: ["design systems", "diseño", "figma"]
-image: /assets/static/images/7.jpg
+image: /assets/static/images/7.webp
 imageAlt: Ilustración de un diseño de sistema
 
 presentacion: Creamos sistemas coherentes, escalables y centrados en el usuario para potenciar tu diseño web. Confía en nosotros para alcanzar resultados excepcionales.

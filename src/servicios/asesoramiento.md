@@ -8,8 +8,8 @@ author: Centre mèdic i estètic Basté
 date: 2021-05-01
 
 tags: ["servicios"]
-image: "/assets/static/images/1.jpg"
-imagemini: "_servicios/designer.jpg"
+image: "/assets/static/images/1.webp"
+imagemini: "_servicios/designer.webp"
 imageAlt: ácido hialurónico
 
 ---

@@ -5,7 +5,7 @@ title: Por qué es crucial incorporar la tipografía en un Design System
 date: 2023-06-21
 fecha: 21 de junio de 2023
 tags: ["tipografía", "design systems", "diseño web", "UI", "UX"]
-image: /assets/static/images/3.jpg
+image: /assets/static/images/3.webp
 imageAlt: Ilustración de letras y caracteres tipográficos
 eleventyComputed:
   metaTitle: Por qué es crucial incorporar la tipografía en un Design System | Design-Systems.es

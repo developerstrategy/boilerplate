@@ -3,11 +3,11 @@ layout: _servicios.njk
 title: Servicios
 subtitle: Servicios subtitulo
 permalink: /servicios/
-image: /assets/static/images/1.jpg
+image: /assets/static/images/1.webp
 author: Toldos marfil
 date: 2021-05-01
 tags: ["page"]
-imagen1: 1.jpg
+imagen1: 1.webp
 imageAlt: servicios
 eleventyComputed:
   metaTitle: "Sobre Toldos Marfil | Instaladores de Toldos Profesionales"
