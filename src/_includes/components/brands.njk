@@ -9,7 +9,7 @@
 {% for brand in global.brands.split(',') %} 
   {% set delay = loop.index * 100 %}
   <div class="col-xs-2 brand-partner">
-    <img data-aos="fade-up" width="100%" height="100%" data-aos-delay="{{ delay }}" src="{{ global.imageDir }}/{{ brand }}.webp" alt="{{ brand }}">
+    <img data-aos="fade-up" width="100%" height="auto" data-aos-delay="{{ delay }}" src="{{ global.imageDir }}/{{ brand }}.webp" alt="{{ brand }}">
   </div>
 {% endfor %}
     </div>
