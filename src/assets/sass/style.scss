@@ -31,17 +31,19 @@ $width-left: calc((1280px + (100vw - 1600px) / 2));
 @import "./theme.scss";
 @import "./header2.scss";
 @import "./_menu.scss";
-@import "./_swiper.scss";
-@import "./_video.scss";
-@import "./_blog.scss";
-@import "./_curso.scss";
-@import "./_brands.scss";
+
+
+
+@import "./componentes/_brands.scss";
+
+@import "./componentes/_swiper.scss";
 @import "./componentes/_bubble-whatsapp.scss";
 @import "./componentes/_google-comments.scss";
 @import "./componentes/_marquee.scss";
 @import "./componentes/_list.scss";
 @import "./componentes/_accordion.scss";
 @import "./componentes/_blog-home.scss";
+@import "./componentes/_video.scss";
 
 $primary-color: var(--primary-color);
 $c-primary: var(--c-primary);
@@ -785,7 +787,7 @@ a:hover {
   content: "";
   width: 100%;
   height: 40vh;
-  background: #f4f4f4;
+  background: var(--bg-dark);
   z-index: 15;
 }
 .bg-colors-1:after {
@@ -910,3 +912,21 @@ a:hover {
 }
 
 
+.bg-colors {
+  background-image: radial-gradient(at 20% 16%,rgba(204,244,245,.56) 0,transparent 50%),radial-gradient(at 80% 16%,rgba(182,158,224,.56) 0,transparent 50%),radial-gradient(at 0 100%,hsla(42,75%,77%,.56) 0,transparent 50%),radial-gradient(at 72% 80%,#e5f9fa 0,transparent 50%),radial-gradient(at 48% 56%,#eee8f8 0,transparent 50%),radial-gradient(at 88% 48%,#faf1db 0,transparent 50%);
+}
+
+.bg-geometric{
+  background-image: url('/assets/static/images/geometric.svg');
+  background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.backdrop-blur-md {
+  border-radius: 20px;
+  
+  border-color: #ffffff7f;
+  border: 3px solid white;
+  backdrop-filter:blur(12px) ;
+  background-color:  rgba(255, 255, 255, 0.332);
+}

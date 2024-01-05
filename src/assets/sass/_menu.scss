@@ -57,6 +57,11 @@ color: #fff;
 
 
 }
+a.logo{
+    color: white;
+}
+
+
 .menu-toogle-bars {
   span {
     width: 15px;
@@ -73,6 +78,8 @@ color: #fff;
       background-color: $c-primary;
     }
   }
+
+
   &.menu-open {
     .menu-mobile {
       color: $c-white;

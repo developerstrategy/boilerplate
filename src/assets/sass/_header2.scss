@@ -28,13 +28,13 @@ header.interior {
   }
 }
 .logo {
-  width: 100%;
+
   max-width: 25px;
   svg {
-    width: 100%;
+
   }
   @media (min-width: $break-md) {
-    width: 100%;
+
     max-width: 45px;
   }
 }

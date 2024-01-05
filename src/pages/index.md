@@ -3,8 +3,8 @@ layout: _index.njk
 permalink: /
 
 
-title:  The Boilerplate
-subtitle:  Plataforma de páginas landing sin código para especialistas en marketing digital basados en datos boilerplate te permite diseñar, publicar y optimizar activos de marketing digital con seguimiento de microconversiones para obtener mejores tasas de conversión. 
+title:  La mejor web landing  optimizada en seo del mundo
+subtitle:  Plataforma de páginas landing sin código para especialistas en marketing digital basada en performance te permite diseñar, publicar y optimizar activos de marketing digital con seguimiento de microconversiones para obtener mejores tasas de conversión. 
 image: 7.webpx
 
 

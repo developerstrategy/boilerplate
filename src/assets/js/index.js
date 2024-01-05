@@ -392,6 +392,9 @@ initPhotoSwipeFromDOM(".my-gallery");
 
 $(document).ready(function () {
   $("body").toggleClass("face-open");
+
+
+  
   initvideo();
 
     $(".accordion-header").click(function(){
