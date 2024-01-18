@@ -31,11 +31,7 @@ $width-left: calc((1280px + (100vw - 1600px) / 2));
 @import "./theme.scss";
 @import "./header2.scss";
 @import "./_menu.scss";
-
-
-
 @import "./componentes/_brands.scss";
-
 @import "./componentes/_swiper.scss";
 @import "./componentes/_bubble-whatsapp.scss";
 @import "./componentes/_google-comments.scss";
@@ -44,14 +40,12 @@ $width-left: calc((1280px + (100vw - 1600px) / 2));
 @import "./componentes/_accordion.scss";
 @import "./componentes/_blog-home.scss";
 @import "./componentes/_video.scss";
-
 $primary-color: var(--primary-color);
 $c-primary: var(--c-primary);
 $c-gray: var(--c-gray);
 $c-secondary: var(--c-secondary);
 $bg-dark: var(--bg-dark);
 $c-bg-dark: var(--c-bg-dark);
-
 svg {
   fill: $c-primary;
 }
@@ -77,12 +71,10 @@ svg {
   color: var(--c-bg-light);
 }
 .bold {
-    background-image: linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 1.3;
-
-
+  background-image: linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.3;
   @include font-bold;
 }
 .btn-primary {
@@ -106,7 +98,6 @@ p {
 strong {
   color: $c-secondary;
 }
-
 b {
   color: $c-secondary;
 }
@@ -263,8 +254,7 @@ ul.list-clear li {
     }
   }
 }
-
-.textarea{
+.textarea {
   min-height: 100px;
 }
 .front-section {
@@ -753,7 +743,6 @@ a:hover {
   }
 }
 .list-circle {
-  
   display: inline-flex;
   margin-right: 16px;
   align-items: center;
@@ -821,7 +810,6 @@ a:hover {
   border: 1px dashed white;
   border-radius: 20px;
 }
-
 .tp-star__canva {
   fill: #00b67a;
 }
@@ -891,52 +879,39 @@ a:hover {
 .script {
   font-family: 'Caveat', cursive;
 }
-
-.svg-star,.google-logo{
+.svg-star,
+.google-logo {
   width: 17px;
   height: 17px;
 }
-
-.bg-color1{
+.bg-color1 {
   background: #DAF2E6;
-
 }
-
-
-.bg-color2{
+.bg-color2 {
   background: #f1f1ff;
-
 }
-.bg-color3{
+.bg-color3 {
   background: #fef1f3;
-
 }
-.bg-color4{
+.bg-color4 {
   background: #fff3ee;
-
 }
-
-
 .bg-colors {
-  background-image: radial-gradient(at 20% 16%,rgba(204,244,245,.56) 0,transparent 50%),radial-gradient(at 80% 16%,rgba(182,158,224,.56) 0,transparent 50%),radial-gradient(at 0 100%,hsla(42,75%,77%,.56) 0,transparent 50%),radial-gradient(at 72% 80%,#e5f9fa 0,transparent 50%),radial-gradient(at 48% 56%,#eee8f8 0,transparent 50%),radial-gradient(at 88% 48%,#faf1db 0,transparent 50%);
+  background-image: radial-gradient(at 20% 16%, rgba(204, 244, 245, .56) 0, transparent 50%), radial-gradient(at 80% 16%, rgba(182, 158, 224, .56) 0, transparent 50%), radial-gradient(at 0 100%, hsla(42, 75%, 77%, .56) 0, transparent 50%), radial-gradient(at 72% 80%, #e5f9fa 0, transparent 50%), radial-gradient(at 48% 56%, #eee8f8 0, transparent 50%), radial-gradient(at 88% 48%, #faf1db 0, transparent 50%);
 }
-
-.bg-geometric{
+.bg-geometric {
   background-image: url('/assets/static/images/geometric.svg');
   background-blend-mode: overlay;
-    background-size: cover;
+  background-size: cover;
+  background-position: center;
 }
-
 .backdrop-blur-md {
   border-radius: 20px;
-  
   border-color: #ffffff7f;
   border: 3px solid white;
-  backdrop-filter:blur(12px) ;
-  background-color:  rgba(255, 255, 255, 0.332);
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.332);
 }
-
-
 .grid-6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -948,36 +923,27 @@ a:hover {
   img {
     max-width: initial;
     width: 60%;
-}
-
-
+  }
   @media (min-width: $break-sm) {
     grid-template-columns: repeat(6, 1fr);
     img {
       max-width: initial;
       width: initial;
-  }
-
+    }
   }
 }
-
-.filter-grey{
+.filter-grey {
   mix-blend-mode: exclusion;
-
 }
-
 .icon-wrapper {
-
   align-self: center;
   position: relative;
-
   width: 80px;
   height: 80px;
   background-color: #ccc;
   border-radius: 50%;
 }
-
-.circle-img{ 
+.circle-img {
   width: 50px;
   height: 50px;
   background-color: #ebebeb;
@@ -987,7 +953,8 @@ a:hover {
   align-items: center;
   border-radius: 50%;
 }
-
-.input, .textarea, .select select{
+.input,
+.textarea,
+.select select {
   border-bottom: 1px solid $c-primary;
 }

@@ -13608,8 +13608,6 @@ header {
   align-items: center;
   font-size: 12px;
   letter-spacing: 2px;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
 }
 @media (min-width: 992px) {
   header {
@@ -13637,8 +13635,6 @@ header.interior svg path {
 
 .scrolled header {
   background-color: rgba(243, 242, 240, 0.7098039216);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -15535,7 +15531,8 @@ a:hover {
   font-family: "Caveat", cursive;
 }
 
-.svg-star, .google-logo {
+.svg-star,
+.google-logo {
   width: 17px;
   height: 17px;
 }
@@ -15564,6 +15561,7 @@ a:hover {
   background-image: url("/assets/static/images/geometric.svg");
   background-blend-mode: overlay;
   background-size: cover;
+  background-position: center;
 }
 
 .backdrop-blur-md {
@@ -15621,6 +15619,8 @@ a:hover {
   border-radius: 50%;
 }
 
-.input, .textarea, .select select {
+.input,
+.textarea,
+.select select {
   border-bottom: 1px solid var(--c-primary);
 }
