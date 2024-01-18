@@ -2,25 +2,30 @@
 layout: base.njk
 ---
 {% set noheroimage = [] %}
+{% import "../../node_modules/boilerplate-modules/src/_includes/macros/_insert.njk" as insert %}
 {% import "macros/_insert.njk" as insert %}
+
 <div class="main-article">
 
 
 
-  {% include 'components/herohome.njk' %}
-  {% include "components/hero.njk" %}
+  {% include 'components/1-herohome.njk' %}
+  {% include "components/3-benefitstrio.njk" %}
+
+
+  {% include "components/2-why.njk" %}
+
+  {% include "components/3-benefits.njk" %}
+
+
+
+  {% include "components/5-faqs.njk" %}
 
 
 
 
+  {% include "components/6-contacta.njk" %}
 
-  {% include "components/banner.njk" %}
-  {% include "components/brands.njk" %}
-  {% include "components/breadcrumbs.njk" %}
-  {% include "components/swiper-blog.njk" %}
-  {% include "components/swiper-gallery.njk" %}
-
-  {% include "components/footer.njk" %}
 
 
 
