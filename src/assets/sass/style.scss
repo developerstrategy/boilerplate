@@ -46,6 +46,13 @@ $c-gray: var(--c-gray);
 $c-secondary: var(--c-secondary);
 $bg-dark: var(--bg-dark);
 $c-bg-dark: var(--c-bg-dark);
+
+
+
+@media (min-width: $break-sm) {
+  $c-primary: red;
+}
+
 svg {
   fill: $c-primary;
 }
@@ -79,9 +86,17 @@ svg {
 }
 .btn-primary {
   color: $c-white;
-  background-color: $c-accent;
-  border: 1px solid $c-accent;
+  background-image: linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%);
+  border: 1px solid   #3D40F5;
 }
+.has-light{
+  .btn-primary {
+    color: $c-white;
+    background-image: linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%);
+    border: 1px solid  #3D40F5;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
@@ -671,9 +686,14 @@ a:hover {
   }
 }
 .btn--big {
-  padding: 20px 40px;
+  padding: 15px 40px;
   border-radius: 50px;
-  font-size: 20px;
+  font-size: 14px;
+  @media (min-width: $break-md) {
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-size: 20px;
+  }
 }
 .btn--mini {
   border-radius: 50px;
@@ -684,9 +704,7 @@ a:hover {
 .btn--full {
   border-radius: 50px;
 }
-.fluid-3-r {
-  letter-spacing: -3px;
-}
+
 .article-loop {
   border-top: 2px solid black
 }
@@ -926,10 +944,7 @@ a:hover {
   }
   @media (min-width: $break-sm) {
     grid-template-columns: repeat(6, 1fr);
-    img {
-      max-width: initial;
-      width: initial;
-    }
+
   }
 }
 .filter-grey {
@@ -957,4 +972,9 @@ a:hover {
 .textarea,
 .select select {
   border-bottom: 1px solid $c-primary;
+}
+
+
+.fluid-3-r {
+  letter-spacing: -3px;
 }

@@ -14624,8 +14624,14 @@ svg {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #b40016;
-  border: 1px solid #b40016;
+  background-image: linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%);
+  border: 1px solid #3D40F5;
+}
+
+.has-light .btn-primary {
+  color: #ffffff;
+  background-image: linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%);
+  border: 1px solid #3D40F5;
 }
 
 html {
@@ -15291,9 +15297,16 @@ a:hover {
 }
 
 .btn--big {
-  padding: 20px 40px;
+  padding: 15px 40px;
   border-radius: 50px;
-  font-size: 20px;
+  font-size: 14px;
+}
+@media (min-width: 992px) {
+  .btn--big {
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-size: 20px;
+  }
 }
 
 .btn--mini {
@@ -15305,10 +15318,6 @@ a:hover {
 
 .btn--full {
   border-radius: 50px;
-}
-
-.fluid-3-r {
-  letter-spacing: -3px;
 }
 
 .article-loop {
@@ -15589,10 +15598,6 @@ a:hover {
   .grid-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .grid-6 img {
-    max-width: initial;
-    width: initial;
-  }
 }
 
 .filter-grey {
@@ -15623,4 +15628,8 @@ a:hover {
 .textarea,
 .select select {
   border-bottom: 1px solid var(--c-primary);
+}
+
+.fluid-3-r {
+  letter-spacing: -3px;
 }
