@@ -25,8 +25,8 @@ content_2: --Crece más rápido--. Recolecta inscripciones con formularios, util
 
 
 eleventyComputed:
-  metaTitle: Design Systems en español | Una recopilación de material para aprender Design systems
-  metaDescription: Explora casos de estudio, aprende las mejores prácticas y mantente actualizado en este emocionante campo del diseño centrado en los design systems.
-  metaKeywords: design systems.es
+  metaTitle: the boilerplate en español | Una recopilación de material para aprender the boilerplate
+  metaDescription: Explora casos de estudio, aprende las mejores prácticas y mantente actualizado en este emocionante campo del diseño centrado en los the boilerplate.
+  metaKeywords: the boilerplate.es
   metaRobots: "index, follow"
 ---
