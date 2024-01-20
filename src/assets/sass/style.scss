@@ -77,7 +77,6 @@ svg {
   background-image: linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   @include font-bold;
 }
 .btn-primary {
@@ -946,7 +945,6 @@ a:hover {
 .icon-wrapper {
   align-self: center;
   position: relative;
-
 }
 .circle-img {
   width: 50px;
@@ -973,4 +971,25 @@ a:hover {
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
+}
+.has-light {
+  .menu-toogle-bars {
+    span {
+      background-color: #fff;
+    }
+  }
+  .scrolled & {
+    .menu-toogle-bars {
+      span {
+        background-color: #000;
+      }
+    }
+  }
+  .menu-open & {
+    .menu-toogle-bars {
+      span {
+        background-color: #000;
+      }
+    }
+  }
 }
