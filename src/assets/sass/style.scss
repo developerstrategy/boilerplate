@@ -3,6 +3,10 @@
 @import "./theme.scss";
 $space-left: calc(((100vw - 1600px + ($padding-global * 4)) / 2));
 $width-left: calc((1280px + (100vw - 1600px) / 2));
+
+
+
+
 @mixin fluid-text($min-vw, $max-vw, $min-font-size, $max-font-size, $fluid-line-height) {
   $u1: unit($min-vw);
   $u2: unit($max-vw);
@@ -45,6 +49,7 @@ $c-primary: var(--c-primary);
 $c-gray: var(--c-gray);
 $c-secondary: var(--c-secondary);
 $bg-dark: var(--bg-dark);
+$bg-primary: var(--bg-primary);
 $c-bg-dark: var(--c-bg-dark);
 @media (min-width: $break-sm) {
   $c-primary: red;
@@ -75,19 +80,19 @@ svg {
 }
 .bold {
   background-image: linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  @include font-bold;
 }
 .btn-primary {
   color: $c-white;
-  background-image: linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%);
+  background-image: var(--bg-primary);
   border: 1px solid #3D40F5;
 }
 .has-light {
   .btn-primary {
     color: $c-white;
-    background-image: linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%);
+    background-image: var(--bg-primary);
     border: 1px solid #3D40F5;
   }
 }
@@ -992,4 +997,76 @@ a:hover {
       }
     }
   }
+}
+
+.word-wrap{
+  span{
+display: inline;
+  }
+
+}
+
+.btn.btn--icon{
+width: 300px;
+height: 80px;
+background-color: #fff;
+border-color: #fff;
+
+&:hover{
+  opacity: 1;
+
+  background-color: #fff;
+  border-color: #fff;
+
+
+  .btn__circle{
+    -webkit-clip-path: inset(0 round 4.25rem);
+    clip-path: inset(0 round 4.25rem);
+
+
+
+  }
+
+
+}
+
+
+.btn__circle{
+  transition: transform .65s cubic-bezier(.785,.135,.15,.86),-webkit-clip-path .65s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .65s cubic-bezier(.785,.135,.15,.86),transform .65s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .65s cubic-bezier(.785,.135,.15,.86),transform .65s cubic-bezier(.785,.135,.15,.86),-webkit-clip-path .65s cubic-bezier(.785,.135,.15,.86);
+  position: absolute;
+  border-radius: 9999px;
+  background-image: var(--bg-primary);
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 1;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+
+
+
+          clip-path: inset( 10px 10px 10px calc(100% - 73px) round 50px);
+
+
+          svg{
+            width: 1.5rem;
+            height: 1.5rem;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+          }
+}
+
+
+}
+
+.btn--icon-text{
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  line-height: 1;
+
 }

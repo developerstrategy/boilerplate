@@ -14248,17 +14248,17 @@ svg#bubble-whatsapp-icon path {
   padding-left: 30px;
   position: relative;
   margin-bottom: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Ctitle%3Echeck%3C/title%3E%3Cg fill='%23FFFFFF'%3E%3Cpath d='M10.293,1.293,4,7.586,1.707,5.293A1,1,0,0,0,.293,6.707l3,3a1,1,0,0,0,1.414,0l7-7a1,1,0,0,0-1.414-1.414Z' fill='%23FFFFFF'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 .list-bullet li:before {
   content: "";
   top: 3px;
   position: absolute;
   left: 0;
-  background-color: #b40016;
+  background-image: var(--bg-primary);
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Ctitle%3Echeck%3C/title%3E%3Cg fill='%23FFFFFF'%3E%3Cpath d='M10.293,1.293,4,7.586,1.707,5.293A1,1,0,0,0,.293,6.707l3,3a1,1,0,0,0,1.414,0l7-7a1,1,0,0,0-1.414-1.414Z' fill='%23FFFFFF'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -14277,6 +14277,7 @@ svg#bubble-whatsapp-icon path {
   position: absolute;
   left: 0;
   background-color: #b40016;
+  background-image: var(--bg-primary);
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -14618,21 +14619,20 @@ svg {
 
 .bold {
   background-image: linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "font-bold", Helvetica, "Arial ", "Lucida Grande", sans-serif;
-  font-weight: 900;
 }
 
 .btn-primary {
   color: #ffffff;
-  background-image: linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%);
+  background-image: var(--bg-primary);
   border: 1px solid #3D40F5;
 }
 
 .has-light .btn-primary {
   color: #ffffff;
-  background-image: linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%);
+  background-image: var(--bg-primary);
   border: 1px solid #3D40F5;
 }
 
@@ -15651,4 +15651,54 @@ a:hover {
 }
 .menu-open .has-light .menu-toogle-bars span {
   background-color: #000;
+}
+
+.word-wrap span {
+  display: inline;
+}
+
+.btn.btn--icon {
+  width: 300px;
+  height: 80px;
+  background-color: #fff;
+  border-color: #fff;
+}
+.btn.btn--icon:hover {
+  opacity: 1;
+  background-color: #fff;
+  border-color: #fff;
+}
+.btn.btn--icon:hover .btn__circle {
+  -webkit-clip-path: inset(0 round 4.25rem);
+  clip-path: inset(0 round 4.25rem);
+}
+.btn.btn--icon .btn__circle {
+  transition: transform 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-clip-path 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: clip-path 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86), transform 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: clip-path 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86), transform 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-clip-path 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  position: absolute;
+  border-radius: 9999px;
+  background-image: var(--bg-primary);
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 1;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  clip-path: inset(10px 10px 10px calc(100% - 73px) round 50px);
+}
+.btn.btn--icon .btn__circle svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.btn--icon-text {
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  line-height: 1;
 }
