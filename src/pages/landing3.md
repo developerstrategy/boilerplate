@@ -1,9 +1,9 @@
 ---
-layout: ../../node_modules/boilerplate-modules/src/_includes/landing.njk
-permalink: /landing.html
+layout: _landing3.njk
+permalink: /landing3.html
 
 
-title:  La mejor web --landing optimizada-- en seo del mundo
+title:  La mejor web **landing optimizada en seo del mundo
 
 whytitle1:  ¿--Eres diseñador--, diseñador web o estás emprendiendo en línea?
 whytitle2:  ¿Alguna vez te has preguntado por qué algunos sitios generan leads y ventas como un reloj y otros solo cuestan $$$?
@@ -11,7 +11,7 @@ whytitle3:  The Boilerplate es una colección de cientos de wireframes en alta r
 
 
 subtitle:  Plataforma de páginas landing sin código para especialistas en marketing digital basada en performance te permite diseñar, publicar y optimizar activos de marketing digital con seguimiento de microconversiones para obtener mejores tasas de conversión. 
-image: 7.webpx
+image: libro.webp
 
 
 
