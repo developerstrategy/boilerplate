@@ -10,7 +10,40 @@ Bienvenido a The boilerplate, la base ideal para crear sitios web dinámicos y e
 - **Documentación Completa**: Guías y ejemplos para facilitar tu proceso de desarrollo.
 
 
-Estructura del Proyecto
+## Estructura del Proyecto
+
+
+
+Para organizar la estructura de carpetas y archivos de tu proyecto de Eleventy con Nunjucks, puedes seguir el siguiente árbol de directorios. Este esquema refleja la organización de los archivos y carpetas que has listado, proporcionando una visión clara de la estructura del proyecto:
+
+css
+Copy code
+
+
+boilerplate/
+├── .eleventy.js
+├── .eslintrc.js
+├── .gitignore
+├── .htmlnanorc
+├── ejemplos.txt
+├── img-exporter copy.js
+├── img-exporter.js
+├── LICENSE
+├── nunjucks.config.js
+├── package-lock.json
+├── package.json
+├── README.md
+└── src/
+    ├── _data/
+    ├── _includes/
+    ├── assets/
+    ├── pages/
+    ├── google5f3d2fed92020926.html
+    ├── humans.njk
+    ├── robots.njk
+    ├── site.webmanifest.njk
+    └── sitemap.njk
+
 A continuación, se detallan los archivos y directorios principales del proyecto:
 
 ## /src
