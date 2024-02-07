@@ -20,27 +20,27 @@ Para organizar la estructura de carpetas y archivos de tu proyecto de Eleventy c
 
    ```bash
 boilerplate/
-├── .eleventy.js # Configuración de Eleventy para personalizar el comportamiento del generador de sitios.
-├── .eslintrc.js # Configuración de ESLint para mantener el estilo y calidad del código JavaScript.
-├── .gitignore # Especifica archivos intencionalmente no rastreados para ignorar por Git.
-├── .htmlnanorc # Configuración para htmlnano, utilizado para minificar archivos HTML.
-├── ejemplos.txt # Archivo de texto que contiene ejemplos o documentación relevante.
-├── img-exporter.js # Script para exportar o procesar imágenes dentro del proyecto.
-├── LICENSE # El archivo de licencia que especifica los términos bajo los cuales se distribuye el proyecto.
-├── nunjucks.config.js # Configuración de Nunjucks para definir filtros y variables globales para las plantillas.
-├── package-lock.json # Autogenerado para cualquier operación donde npm modifica el árbol de node_modules o package.json.
-├── package.json # Define propiedades y dependencias del proyecto, scripts y metadatos relevantes.
-├── README.md # Documentación inicial del proyecto, proporcionando una visión general y guía de uso.
-└── src/ # Directorio que contiene el código fuente del proyecto.
-├── _data/ # Datos globales que pueden ser utilizados en las plantillas.
-├── _includes/ # Componentes, layouts y fragmentos reutilizables de Nunjucks.
-├── assets/ # Recursos estáticos como CSS, JavaScript, imágenes.
-├── pages/ # Las páginas del sitio, cada una correspondiente a una ruta URL.
-├── google5f3d2fed92020926.html # Verificación de propiedad de Google Site.
-├── humans.njk # Plantilla Nunjucks para generar el archivo humans.txt, promoviendo el reconocimiento humano.
-├── robots.njk # Plantilla Nunjucks para generar el archivo robots.txt, para controlar el acceso de los motores de búsqueda.
-├── site.webmanifest.njk # Plantilla para generar el manifiesto del sitio web, utilizado por los navegadores.
-└── sitemap.njk # Plantilla para generar el sitemap del sitio, importante para SEO.
+   ├── .eleventy.js # Configuración de Eleventy para personalizar el comportamiento del generador de sitios.
+   ├── .eslintrc.js # Configuración de ESLint para mantener el estilo y calidad del código JavaScript.
+   ├── .gitignore # Especifica archivos intencionalmente no rastreados para ignorar por Git.
+   ├── .htmlnanorc # Configuración para htmlnano, utilizado para minificar archivos HTML.
+   ├── ejemplos.txt # Archivo de texto que contiene ejemplos o documentación relevante.
+   ├── img-exporter.js # Script para exportar o procesar imágenes dentro del proyecto.
+   ├── LICENSE # El archivo de licencia que especifica los términos bajo los cuales se distribuye el proyecto.
+   ├── nunjucks.config.js # Configuración de Nunjucks para definir filtros y variables globales para las plantillas.
+   ├── package-lock.json # Autogenerado para cualquier operación donde npm modifica el árbol de node_modules o package.json.
+   ├── package.json # Define propiedades y dependencias del proyecto, scripts y metadatos relevantes.
+   ├── README.md # Documentación inicial del proyecto, proporcionando una visión general y guía de uso.
+   └── src/ # Directorio que contiene el código fuente del proyecto.
+      ├── _data/ # Datos globales que pueden ser utilizados en las plantillas.
+      ├── _includes/ # Componentes, layouts y fragmentos reutilizables de Nunjucks.
+      ├── assets/ # Recursos estáticos como CSS, JavaScript, imágenes.
+      ├── pages/ # Las páginas del sitio, cada una correspondiente a una ruta URL.
+      ├── google5f3d2fed92020926.html # Verificación de propiedad de Google Site.
+      ├── humans.njk # Plantilla Nunjucks para generar el archivo humans.txt, promoviendo el reconocimiento humano.
+      ├── robots.njk # Plantilla Nunjucks para generar el archivo robots.txt, para controlar el acceso de los motores de búsqueda.
+      ├── site.webmanifest.njk # Plantilla para generar el manifiesto del sitio web, utilizado por los navegadores.
+      └── sitemap.njk # Plantilla para generar el sitemap del sitio, importante para SEO.
    ```
 
 A continuación, se detallan los archivos y directorios principales del proyecto:
