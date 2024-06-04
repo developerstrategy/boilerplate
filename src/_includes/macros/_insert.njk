@@ -93,10 +93,6 @@
   </div>
 </div>
 {% endmacro %}
-
-
-
-
 {% macro splitenpalabras2(frase = '', frase2 = '') %}
 {% set palabras = frase.split(" ") %}
 {% set palabras2 = frase.split(" ") %}
@@ -109,10 +105,6 @@
   {% endfor %}
 </span>
 {% endmacro %}
-
-
-
-
 {% macro comentario(empresa = '', texto = '', fecha = '',img = '') %}
 <div class="google-comment">
   <div class="google-bubble mb-16">
@@ -208,9 +200,6 @@
   </div>
 </div>
 {% endmacro %}
-
-
-
 {% macro splitenpalabras(frase = '', type = '', animationTime='', animationDelay='' ) %}
 {% set palabras = frase.split(" ") %}
 <div class="word-wrap">
@@ -227,10 +216,6 @@
   {% endfor%}
 </div>
 {% endmacro %}
-
-
-
-
 {% macro splitenlistas(frase = '', type = '', animationTime='', animationDelay='' ) %}
 {% set palabras = frase.split(" ") %}
 {% for palabra in palabras %}
@@ -307,9 +292,6 @@
   </div>
 </div>
 {% endmacro %}
-
-
-
 {% macro experiment(title = '',img = '', type = '', description = '', año = '') %}
 <div class="panel">
   <div class="panel-img"> <img src=" /assets/static/proyectos/{{img}}" alt=""> </div>
@@ -350,49 +332,31 @@
   </div>
 </div>
 {% endmacro %}
-
-
-
 {% macro comentario2(descripcion = '',imagen = '', nombre = '', puesto = '' ) %}
-
-
 <div class="p-24 bg-white border-20">
-          
   <div class="pb-40">{{descripcion}} </div>
-
-
   <div class="row">
     <div class="col-xs-3">
-      <div class="circle-img">  {{imagen}} </div>
+      <div class="circle-img"> {{imagen}} </div>
     </div>
-    <div class="col-xs-9"> <div class="p1-b"> {{nombre}}</div> <div> {{puesto}}</div> </div>
+    <div class="col-xs-9">
+      <div class="p1-b"> {{nombre}}</div>
+      <div> {{puesto}}</div>
+    </div>
   </div>
-
-
 </div>
-
-
 {% endmacro %}
-
-
-
 {% macro minibenefit(icono = '',titulo = '', descripcion = '' ) %}
-
-
 <div class="p-24 bg-white border-20">
-          
   <div class="pb-40">{{descripcion}} </div>
-
-
   <div class="row">
     <div class="col-xs-3">
-      <div class="circle-img">  {{imagen}} </div>
+      <div class="circle-img"> {{imagen}} </div>
     </div>
-    <div class="col-xs-9"> <div class="p1-b"> {{nombre}}</div> <div> {{puesto}}</div> </div>
+    <div class="col-xs-9">
+      <div class="p1-b"> {{nombre}}</div>
+      <div> {{puesto}}</div>
+    </div>
   </div>
-
-
 </div>
-
-
 {% endmacro %}

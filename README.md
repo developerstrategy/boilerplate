@@ -109,7 +109,24 @@ Agradecemos a todos quienes han contribuido con su tiempo, código y feedback.
 Inspiración, créditos, etc.
 
 
+Herramientas
 
+{% call insert.splitenpalabras(herodesc , '',10,10  ) %} {% endcall %}
+
+{% call insert.splitenpalabras2("frase 1", "frase 2" ) %} {% endcall %}
+
+
+Espaciado
+   {% br3 %}
+       introducir imagenes con su tamaño
+
+
+Se edita en eleventy
+  {% image  "foto.jpg","alt","title","class" %}
+
+
+ ## Rollover cursor
+ data-text="Ver más" class="swiper-wrapper  hoverable_link"
 
 
 

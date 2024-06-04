@@ -2,25 +2,12 @@
 layout: base.njk
 ---
 {% set noheroimage = [] %}
-
-
-{% import global2.base_modules+"macros/_insert.njk" as insert %}
-{% import "macros/_insert.njk" as insert %}
-
-
+{% import global2.base_modules+"_macros/_insert.njk" as insert %}
 <div class="main-article">
-
-
   {% include global2.base_modules+"templates/1-introCta.njk" %}
-
-
-  {{global2.url}}
-
+  {{global2.url}} <br>
   {{global2.base_modules}}
-
   <div class="container-fluid bg-color">
-
+    boilerplate
   </div>
-
-
 </div>

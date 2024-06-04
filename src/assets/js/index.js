@@ -160,6 +160,9 @@ var mySwiper = new Swiper(".swiper-container-img", {
   },
 });
 
+
+
+
 var initPhotoSwipeFromDOM = function (gallerySelector) {
   // parse slide data (url, title, size ...) from DOM elements
   // (children of gallerySelector)
@@ -434,4 +437,15 @@ $(document).ready(function () {
 
 
 
+});
+
+
+$({ Counter: 0 }).animate({
+  Counter: $('.animated-counter').text()
+}, {
+  duration: 1000,
+  easing: 'swing',
+  step: function() {
+    $('.animated-counter').text(Math.ceil(this.Counter));
+  }
 });

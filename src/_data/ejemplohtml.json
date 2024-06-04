@@ -1,0 +1,123 @@
+{
+  "grupo": [
+    {
+      "nombre": "ejemplohtml",
+      "imagen": "/assets/static/images/restaurantes/ejemplohtml.svg"
+    }
+  ],
+  "restaurante": [
+    {
+      "nombre": "mahalopoke",
+      "imagen": "/assets/static/images/restaurantes/mahalo.jpg"
+    },
+    {
+      "nombre": "vulcano",
+      "imagen": "/assets/static/images/restaurantes/vulcano.jpg"
+    },
+    {
+      "nombre": "mostaza",
+      "imagen": "/assets/static/images/restaurantes/mostaza.jpg"
+    },
+    {
+      "nombre": "sentaki",
+      "imagen": "/assets/static/images/restaurantes/sentaki.jpg"
+    },
+    {
+      "nombre": "calambrito",
+      "imagen": "/assets/static/images/restaurantes/calambrito.jpg"
+    },
+    {
+      "nombre": "flordegrana",
+      "imagen": "/assets/static/images/restaurantes/flordegrana.jpg"
+    }
+  ],
+  "elementos": [
+    {
+      "tipo": "terraza 1",
+      "links": [
+        {
+          "nombre": "mahalopoke",
+          "url": "https://tools.checkqrpay.com/mahalo-poke/6565b3d63ab2db05a8331e01"
+        },
+        {
+          "nombre": "vulcano",
+          "url": "https://tools.checkqrpay.com/vulcano-ejemplohtml/65a565cbb4092350ca6f2d68"
+        },
+        {
+          "nombre": "mostazagreen",
+          "url": "https://tools.checkqrpay.com/mostaza-green-sinqro/65a670c5b4092350ca6ff058"
+        },
+        {
+          "nombre": "sentaki",
+          "url": "https://tools.checkqrpay.com/sentaki-1/65cca5d37c22cb6b2832870d"
+        },
+        {
+          "nombre": "calambrito",
+          "url": "https://tools.checkqrpay.com/el-calambrito/655f36c3c9c1b31139afa81e"
+        },
+        {
+          "nombre": "flordegrana",
+          "url": "https://tools.checkqrpay.com/flor-de-grana/65cf20127c22cb6b2840f11a"
+        }
+      ]
+    },
+    {
+      "tipo": "terraza 2",
+      "links": [
+        {
+          "nombre": "mahalopoke",
+          "url": "https://tools.checkqrpay.com/mahalo-poke/6565b3dc3ab2db05a8331e16"
+        },
+        {
+          "nombre": "vulcano",
+          "url": "https://tools.checkqrpay.com/vulcano-ejemplohtml/65a565cbb4092350ca6f2d69"
+        },
+        {
+          "nombre": "mostazagreen",
+          "url": "https://tools.checkqrpay.com/mostaza-green-sinqro/65a670c5b4092350ca6ff057"
+        },
+        {
+          "nombre": "sentaki",
+          "url": "https://tools.checkqrpay.com/sentaki-1/65cca5d37c22cb6b28328710"
+        },
+        {
+          "nombre": "calambrito",
+          "url": "https://tools.checkqrpay.com/el-calambrito/655f36c9c9c1b31139afa834"
+        },
+        {
+          "nombre": "flordegrana",
+          "url": "https://tools.checkqrpay.com/flor-de-grana/65cf201a7c22cb6b2840f131"
+        }
+      ]
+    },
+    {
+      "tipo": "terraza 3",
+      "links": [
+        {
+          "nombre": "mahalopoke",
+          "url": "https://tools.checkqrpay.com/mahalo-poke/6565b3e33ab2db05a8331e2c"
+        },
+        {
+          "nombre": "vulcano",
+          "url": "https://tools.checkqrpay.com/vulcano-ejemplohtml/65a565cbb4092350ca6f2d80"
+        },
+        {
+          "nombre": "mostazagreen",
+          "url": "https://tools.checkqrpay.com/mostaza-green-sinqro/65a670c5b4092350ca6ff056"
+        },
+        {
+          "nombre": "sentaki",
+          "url": "https://tools.checkqrpay.com/sentaki-1/65cca5d37c22cb6b2832870a"
+        },
+        {
+          "nombre": "calambrito",
+          "url": "https://tools.checkqrpay.com/el-calambrito/655f36d0c9c1b31139afa861"
+        },
+        {
+          "nombre": "flordegrana",
+          "url": "https://tools.checkqrpay.com/flor-de-grana/65cf20267c22cb6b2840f146"
+        }
+      ]
+    }
+  ]
+}
