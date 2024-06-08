@@ -1,0 +1,25 @@
+---
+layout: layout/base.njk
+---
+{% set noheroimage = [] %}
+{% import global2.base_modules+"_macros/_insert.njk" as insert %}
+
+{% import "macros/_insert.njk" as insert %}
+
+
+<div class="main-article">
+  {% include 'templates/1-introCta.njk' %}
+
+  {% include "templates/2-benefits.njk" %}
+  {% include "templates/3-why.njk" %}
+
+  <div class="container-fluid bg-color">
+    {% include "templates/content_1.njk" %}
+    {% include "templates/content_2.njk" %}
+    {% include "templates/content_3.njk" %}
+    {% include "templates/features_1.njk" %}
+  </div>
+  {% include "templates/5-faqs.njk" %}
+  {# {% include "templates/contacta_1.njk" %} #}
+  {% include "templates/contacta_2.njk" %}
+</div>

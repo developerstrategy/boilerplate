@@ -1,6 +1,6 @@
 {
 
-  "base_modules": "../../node_modules/boilerplate-modules/src/_includes/",
+  "base_modules": "../../../node_modules/boilerplate-modules/src/_includes/",
   "title": "Boilerplate",
   "lang": "es-es",
   "footer": "",

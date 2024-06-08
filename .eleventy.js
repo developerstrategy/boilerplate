@@ -7,6 +7,10 @@ const embeds = require("eleventy-plugin-embed-everything");
 const sizeOf = require("image-size");
 const eleventyWebcPlugin = require("@11ty/eleventy-plugin-webc");
 const { eleventyImagePlugin } = require("@11ty/eleventy-img");
+const path = require('path');
+const fs = require('fs');
+
+
 const mdOptions = {
   html: true,
   breaks: true,
@@ -91,6 +95,17 @@ module.exports = function (eleventyConfig) {
   <br><br><br>
 `;
   });
+
+// Define la ruta a la carpeta de templates
+const templatesDir = path.resolve(__dirname, 'node_modules', 'boilerplate-modules', 'src', '_includes', 'templates');
+
+
+const templates = fs.readdirSync(templatesDir).filter(file => file.endsWith('.njk'));
+
+eleventyConfig.addGlobalData('pluginTemplates', templates.map(file => path.join(templatesDir, file)));
+
+// Define la ruta a la carpeta de templates
+
   eleventyConfig.addFilter("wrapWithDiv", function (markdownString) {
     return markdownString.replace(/--(.*?)--/g, '<span class="bold">$1</span>');
   });

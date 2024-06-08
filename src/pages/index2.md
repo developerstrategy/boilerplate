@@ -1,5 +1,5 @@
 ---
-layout: _index2.njk
+layout: pages/_index2.njk
 permalink: /index2
 
 

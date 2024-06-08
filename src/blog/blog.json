@@ -1,0 +1,9 @@
+
+{
+	"layout": "templates/_bloginner.njk",
+	"author": "Toldos marfil",
+	"tags": ["blog"],
+	"tag": "post",
+	"categoryName": "Blog",
+	"permalink": "blog/{{ page.fileSlug }}/"
+}

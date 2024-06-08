@@ -1,0 +1,14 @@
+
+
+<div class="section front-section bg-light height-md  ">
+  <div class="container ">
+    
+    <ul role="list" class="list-clear grid-1-2-4 ">
+      {% for post in collections.post | reverse %}
+
+
+        {% include 'templates/_blog-loop.njk' %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>

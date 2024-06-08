@@ -1,5 +1,5 @@
 ---
-layout: _sitemap_onpage.njk
+layout: pages/_sitemap_onpage.njk
 permalink: /site.html
 
 

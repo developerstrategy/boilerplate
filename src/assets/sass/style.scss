@@ -1,6 +1,7 @@
 @import "base/_fonts.scss";
 @import "abstract/_setup.scss";
-@import "./theme.scss";
+
+
 $space-left: calc(((100vw - 1600px + ($padding-global * 4)) / 2));
 $width-left: calc((1280px + (100vw - 1600px) / 2));
 @mixin fluid-text($min-vw, $max-vw, $min-font-size, $max-font-size, $fluid-line-height) {
@@ -27,6 +28,8 @@ $width-left: calc((1280px + (100vw - 1600px) / 2));
 // -FASE 4 : OVERRIDE YOUR HOLYGRAIL
 @include space($breakpoints, $padding-top, $pt);
 @include space($breakpoints, $padding-bottom, $pb);
+
+@import "./theme.scss";
 @import "./_animations.scss";
 @import "./theme.scss";
 @import "./header2.scss";
@@ -40,13 +43,10 @@ $width-left: calc((1280px + (100vw - 1600px) / 2));
 @import "./componentes/_accordion.scss";
 @import "./componentes/_blog-home.scss";
 @import "./componentes/_video.scss";
-$primary-color: var(--primary-color);
-$c-primary: var(--c-primary);
-$c-gray: var(--c-gray);
-$c-secondary: var(--c-secondary);
-$bg-dark: var(--bg-dark);
-$bg-primary: var(--bg-primary);
-$c-bg-dark: var(--c-bg-dark);
+@import "./_blog.scss";
+
+
+
 @media (min-width: $break-sm) {
   $c-primary: red;
 }
@@ -74,24 +74,8 @@ svg {
   background-color: var(--bg-light);
   color: var(--c-bg-light);
 }
-.bold {
-  background-image: linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.btn-primary {
-  color: $c-white;
-  background-image: var(--bg-primary);
-  border: 1px solid #3D40F5;
-}
-.has-light {
-  .btn-primary {
-    color: $c-white;
-    background-image: var(--bg-primary);
-    border: 1px solid #3D40F5;
-  }
-}
+
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
@@ -105,12 +89,7 @@ body {
 p {
   font-size: inherit;
 }
-strong {
-  color: $c-secondary;
-}
-b {
-  color: $c-secondary;
-}
+
 a {
   &:hover {
     cursor: pointer;
@@ -120,11 +99,7 @@ a {
   background-color: $bg-dark;
   color: $c-bg-dark;
 }
-.has-light {
-  a {
-    color: white;
-  }
-}
+
 .half-white-bg {
   position: relative;
   @media (min-width: $break-sm) {
@@ -209,12 +184,7 @@ img {
 .form-input-label-2 input {
   background-color: transparent;
 }
-b {
-  @include font-bold;
-  .has-light & {
-    color: white;
-  }
-}
+
 ul.list-clear li {
   list-style: none;
   margin: 16px 0;
@@ -911,8 +881,8 @@ a:hover {
 .bg-colors {
   background-image: radial-gradient(at 20% 16%, rgba(204, 244, 245, .56) 0, transparent 50%), radial-gradient(at 80% 16%, rgba(182, 158, 224, .56) 0, transparent 50%), radial-gradient(at 0 100%, hsla(42, 75%, 77%, .56) 0, transparent 50%), radial-gradient(at 72% 80%, #e5f9fa 0, transparent 50%), radial-gradient(at 48% 56%, #eee8f8 0, transparent 50%), radial-gradient(at 88% 48%, #faf1db 0, transparent 50%);
 }
-.bg-geometric {
-  background-image: url('/assets/static/images/geometric.svg');
+.bg-hero {
+  background-image: url('/assets/static/images/fondo_1.jpg');
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
@@ -938,6 +908,31 @@ a:hover {
   }
   @media (min-width: $break-sm) {
     grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.grid-2-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+
+  @media (min-width: $break-sm) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.grid-1-2-4 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+
+
+  @media (min-width: $break-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: $break-md) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .filter-grey {
@@ -973,108 +968,21 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-.has-light {
-  .menu-toogle-bars {
-    span {
-      background-color: #fff;
-    }
-  }
-  .scrolled & {
-    .menu-toogle-bars {
-      span {
-        background-color: #000;
-      }
-    }
-  }
-  .menu-open & {
-    .menu-toogle-bars {
-      span {
-        background-color: #000;
-      }
-    }
-  }
-}
+
 .word-wrap {
   span {
     display: inline;
   }
 }
-.btn.btn--icon {
-  width: 300px;
-  height: 80px;
-  background-color: #fff;
-  border-color: #fff;
-  &:hover {
-    opacity: 1;
-    background-color: #fff;
-    border-color: #fff;
-    .btn__circle {
-      -webkit-clip-path: inset(0 round 4.25rem);
-      clip-path: inset(0 round 4.25rem);
-    }
-  }
-  .btn__circle {
-    transition: transform .65s cubic-bezier(.785, .135, .15, .86), -webkit-clip-path .65s cubic-bezier(.785, .135, .15, .86);
-    transition: clip-path .65s cubic-bezier(.785, .135, .15, .86), transform .65s cubic-bezier(.785, .135, .15, .86);
-    transition: clip-path .65s cubic-bezier(.785, .135, .15, .86), transform .65s cubic-bezier(.785, .135, .15, .86), -webkit-clip-path .65s cubic-bezier(.785, .135, .15, .86);
-    position: absolute;
-    border-radius: 9999px;
-    background-image: var(--bg-primary);
-    padding-left: 40px;
-    padding-right: 40px;
-    line-height: 1;
-    bottom: -1px;
-    left: -1px;
-    right: -1px;
-    top: -1px;
-    clip-path: inset(10px 10px 10px calc(100% - 73px) round 50px);
-    svg {
-      width: 1.5rem;
-      height: 1.5rem;
-      position: absolute;
-      top: 30px;
-      right: 30px;
-    }
-  }
-  .btn--icon-text {
-    position: absolute;
-    left: 32px;
-    top: 32px;
-    line-height: 1;
-  }
+
+.ar-16-9 {
+  aspect-ratio: 16 / 9;
 }
 
+.ar-21-9 {
+  aspect-ratio: 21 / 9;
+}
 
-
-.home {
-  .menu-desktop-wrap {
-    a {
-      color: #fff;
-    }
-  }
-  .logo {
-    color: #fff;
-  }
-  svg {
-    fill: white;
-    path {
-      fill: white;
-    }
-  }
-  &.scrolled {
-    .menu-desktop-wrap {
-      a {
-        color: var(--c-primary);
-      }
-    }
-    .logo {
-      color: var(--c-primary);
-    }
-    svg {
-      color: var(--c-primary);
-      path {
-        color: var(--c-primary);
-      }
-    }
-  }
+.rad-24{
+  border-radius: 24px;
 }

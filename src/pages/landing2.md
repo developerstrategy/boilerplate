@@ -1,5 +1,5 @@
 ---
-layout: _landing2.njk
+layout: pages/_landing2.njk
 permalink: /landing2.html
 
 
