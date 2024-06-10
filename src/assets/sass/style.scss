@@ -408,6 +408,20 @@ ul.list-clear li {
     left: 50%;
   }
 }
+
+.l-bottom {
+  border-bottom: 1px solid #eaeaea;
+  position: relative;
+  :after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #eaeaea;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+}
 .tag-info {
   letter-spacing: 0;
   font-size: 11px;
